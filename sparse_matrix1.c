@@ -15,33 +15,37 @@ int SIZE;
 //SIZE OF ROWS AND COLS OF INPUT MATRIX
 const int MATRIX_ROWS, MATRIX_COLS;
 
+//INPUT MATRIX AND TRANSPOSE
+int matrix[100][100];
+int transpose[100][100];
+
 //PRINT 2D MATRIX
-void printMatrix(int arr[MATRIX_ROWS][MATRIX_COLS])
+void printMatrix(int printMatrix[100][100], int rows, int cols)
 {
     int i, j;
-    for (i = 0; i < MATRIX_ROWS; i++)
+    for (i = 0; i < rows; i++)
     {
-        for (j = 0; j < MATRIX_COLS; j++)
+        for (j = 0; j < cols; j++)
         {
-            printf("%3d", arr[i][j]);
+            printf("%4d", printMatrix[i][j]);
         }
         printf("\n");
     }
 }
 
 //CONVERT NORMAL MATRIX TO SPARSE MATRIX
-void convertToSparseMatrix(int arr[MATRIX_ROWS][MATRIX_COLS])
+void convertToSparseMatrix()
 {
     int i, j, k = 0;
     for (i = 0; i < MATRIX_ROWS; i++)
     {
         for (j = 0; j < MATRIX_COLS; j++)
         {
-            if (arr[i][j])
+            if (matrix[i][j])
             {
                 terms[k].row = i + 1;
                 terms[k].col = j + 1;
-                terms[k].value = arr[i][j];
+                terms[k].value = matrix[i][j];
                 k++;
             }
         }
@@ -64,22 +68,20 @@ void transposeSparseMatrix()
 //CONVERT TUPLE FORM BACK TO 2D
 void convertSparseToNormal()
 {
-    int i, j, new_arr[MATRIX_ROWS][MATRIX_COLS];
-    //INITILIAZE AN ARRAY WITH ALL ELEMENTS 0
-    for (i = 0; i < MATRIX_ROWS; i++)
-        for (j = 0; j < MATRIX_COLS; j++)
-            new_arr[i][j] = 0;
+    int i, j;
+    //INITILIAZE TRANSPOSE ARRAY WITH ALL ELEMENTS 0
+    for (i = 0; i < MATRIX_COLS; i++)
+        for (j = 0; j < MATRIX_ROWS; j++)
+            transpose[i][j] = 0;
 
-    //Arr[row][col] = value (-1 is added since tuple is 1 based indexing)
+    //transpose[row][col] = value (-1 is added since tuple is 1 based indexing)
     for (i = 0; i < SIZE; i++)
     {
-        new_arr[terms[i].row - 1][terms[i].col - 1] = terms[i].value;
+        transpose[terms[i].row - 1][terms[i].col - 1] = terms[i].value;
     }
-    printf("\n\nTRANSPOSE OF INPUT MATRIX\n");
-    printMatrix(new_arr);
 }
 
-//PRINT SPARSE MATRIX (TUPLE FORM)
+// PRINT SPARSE MATRIX (TUPLE FORM)
 void printSparseMatrix()
 {
     int i;
@@ -96,19 +98,22 @@ int main()
     int i, j;
     printf("\nEnter matrix dimensions: ");
     scanf("%d %d", &MATRIX_ROWS, &MATRIX_COLS);
-    int arr[MATRIX_ROWS][MATRIX_COLS];
+    // int arr[MATRIX_ROWS][MATRIX_COLS];
     printf("\nEnter matrix: ");
     for (i = 0; i < MATRIX_ROWS; i++)
         for (j = 0; j < MATRIX_COLS; j++)
-            scanf("%d", &arr[i][j]);
+            scanf("%d", &matrix[i][j]);
+
     printf("\nINPUT MATRIX\n");
-    printMatrix(arr);
-    convertToSparseMatrix(arr);
+    printMatrix(matrix, MATRIX_ROWS, MATRIX_COLS);
+    convertToSparseMatrix();
     printf("\n\nSPARSE MATRIX (TUPLE FORM)\n");
     printSparseMatrix();
     printf("\n\nTRANSPOSE OF SPARSE MATRIX (TUPLE FORM)\n");
     transposeSparseMatrix();
     printSparseMatrix();
     convertSparseToNormal();
+    printf("\n\nTRANSPOSE OF INPUT MATRIX\n");
+    printMatrix(transpose, MATRIX_COLS, MATRIX_ROWS);
     return 0;
 }
