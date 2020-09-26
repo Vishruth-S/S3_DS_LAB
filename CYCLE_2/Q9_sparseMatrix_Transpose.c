@@ -1,7 +1,7 @@
 //CSL201 DATA STRUCTURES LAB ----- VISHRUTH S, CS3A, 61
 //CYCLE 2 QUESTION 9
 //PROGRAM TO CONVERT A SPARSE MATRIX TO TUPLE FORM AND PRINT IT
-//AND FIND IT'S TRANPOSE. PRINT BOTH TUPLE AND ORIGINAL FORM OF TRANSPOSE
+//AND FIND ITS TRANPOSE. PRINT BOTH TUPLE AND ORIGINAL FORM OF TRANSPOSE
 
 #include <stdio.h>
 #define MAX_TERMS 100
@@ -24,7 +24,7 @@ const int MATRIX_ROWS, MATRIX_COLS;
 int matrix[100][100];
 int transpose[100][100];
 
-//FUNCTION TO PRINT MATRIX IN 2D NORMAL ARRAY FORM
+//FUNCTION TO PRINT MATRIX IN 2D NORMAL FORM
 void printMatrix(int printMatrix[100][100], int rows, int cols)
 {
     int i, j;
@@ -86,7 +86,7 @@ void transposeSparseMatrix()
 void convertSparseToNormal()
 {
     int i, j;
-    //INITILIAZE TRANSPOSE ARRAY WITH ALL ELEMENTS 0
+    //INITILIAZE TRANSPOSE MATRIX WITH ALL ELEMENTS 0
     for (i = 0; i < MATRIX_COLS; i++)
         for (j = 0; j < MATRIX_ROWS; j++)
             transpose[i][j] = 0;
