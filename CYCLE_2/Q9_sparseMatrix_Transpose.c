@@ -1,7 +1,7 @@
 //CSL201 DATA STRUCTURES LAB ----- VISHRUTH S, CS3A, 61
 //CYCLE 2 QUESTION 9
 //PROGRAM TO CONVERT A SPARSE MATRIX TO TUPLE FORM AND PRINT IT
-//AND FIND ITS TRANPOSE. PRINT BOTH TUPLE AND ORIGINAL FORM OF TRANSPOSE
+//AND FIND IT'S TRANPOSE. PRINT BOTH TUPLE AND ORIGINAL FORM OF TRANSPOSE
 
 #include <stdio.h>
 #define MAX_TERMS 100
@@ -14,7 +14,8 @@ struct Sparse_matrix
 };
 
 //SPARSE MATRIX STRUCTURE AND SIZE
-struct Sparse_matrix terms[MAX_TERMS];
+struct Sparse_matrix sparse1[MAX_TERMS];
+struct Sparse_matrix transposeSparse[MAX_TERMS];
 int SIZE;
 
 //SIZE OF ROWS AND COLS OF INPUT MATRIX
@@ -24,7 +25,7 @@ const int MATRIX_ROWS, MATRIX_COLS;
 int matrix[100][100];
 int transpose[100][100];
 
-//FUNCTION TO PRINT MATRIX IN 2D NORMAL FORM
+//FUNCTION TO PRINT MATRIX IN 2D NORMAL ARRAY FORM
 void printMatrix(int printMatrix[100][100], int rows, int cols)
 {
     int i, j;
@@ -39,14 +40,15 @@ void printMatrix(int printMatrix[100][100], int rows, int cols)
 }
 
 //FUNCTION PRINT SPARSE MATRIX (TUPLE FORM)
-void printSparseMatrix()
+void printSparseMatrix(struct Sparse_matrix sparse[100])
 {
     int i;
+    printf("\n");
     printf("ROW  COLUMN  VALUE");
     for (i = 0; i < SIZE; i++)
     {
         printf("\n");
-        printf("%d\t%d\t%d", terms[i].row, terms[i].col, terms[i].value);
+        printf("%d\t%d\t%d", sparse[i].row, sparse[i].col, sparse[i].value);
     }
 }
 
@@ -60,9 +62,9 @@ void convertToSparseMatrix()
         {
             if (matrix[i][j])
             {
-                terms[k].row = i + 1;
-                terms[k].col = j + 1;
-                terms[k].value = matrix[i][j];
+                sparse1[k].row = i + 1;
+                sparse1[k].col = j + 1;
+                sparse1[k].value = matrix[i][j];
                 k++;
             }
         }
@@ -73,12 +75,19 @@ void convertToSparseMatrix()
 //FIND TRANSPOSE OF SPARSE MATRIX
 void transposeSparseMatrix()
 {
-    int i, temp;
-    for (i = 0; i < SIZE; i++)
+    int i, j, k = 0, min_col;
+    for (i = 1; i <= MATRIX_COLS; i++)
     {
-        temp = terms[i].row;
-        terms[i].row = terms[i].col;
-        terms[i].col = temp;
+        for (j = 0; j < SIZE; j++)
+        {
+            if (sparse1[j].col == i)
+            {
+                transposeSparse[k].row = sparse1[j].col;
+                transposeSparse[k].col = sparse1[j].row;
+                transposeSparse[k].value = sparse1[j].value;
+                k++;
+            }
+        }
     }
 }
 
@@ -86,7 +95,7 @@ void transposeSparseMatrix()
 void convertSparseToNormal()
 {
     int i, j;
-    //INITILIAZE TRANSPOSE MATRIX WITH ALL ELEMENTS 0
+    //INITILIAZE TRANSPOSE ARRAY WITH ALL ELEMENTS 0
     for (i = 0; i < MATRIX_COLS; i++)
         for (j = 0; j < MATRIX_ROWS; j++)
             transpose[i][j] = 0;
@@ -94,7 +103,7 @@ void convertSparseToNormal()
     //transpose[row][col] = value (-1 is added since tuple is 1 based indexing)
     for (i = 0; i < SIZE; i++)
     {
-        transpose[terms[i].row - 1][terms[i].col - 1] = terms[i].value;
+        transpose[transposeSparse[i].row - 1][transposeSparse[i].col - 1] = transposeSparse[i].value;
     }
 }
 
@@ -113,12 +122,12 @@ int main()
 
     convertToSparseMatrix();
 
-    printf("\n\nSPARSE MATRIX (TUPLE FORM)\n");
-    printSparseMatrix();
+    printf("\n\nSPARSE MATRIX (TUPLE FORM)");
+    printSparseMatrix(sparse1);
 
-    printf("\n\nTRANSPOSE OF SPARSE MATRIX (TUPLE FORM)\n");
+    printf("\n\nTRANSPOSE OF SPARSE MATRIX (TUPLE FORM)");
     transposeSparseMatrix();
-    printSparseMatrix();
+    printSparseMatrix(transposeSparse);
 
     printf("\n\nTRANSPOSE OF INPUT MATRIX\n");
     convertSparseToNormal();
