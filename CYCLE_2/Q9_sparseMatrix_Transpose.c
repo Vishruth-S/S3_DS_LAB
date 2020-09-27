@@ -39,7 +39,7 @@ void printMatrix(int printMatrix[100][100], int rows, int cols)
     }
 }
 
-//FUNCTION PRINT SPARSE MATRIX (TUPLE FORM)
+//FUNCTION TO PRINT SPARSE MATRIX (TUPLE FORM)
 void printSparseMatrix(struct Sparse_matrix sparse[100])
 {
     int i;
@@ -55,7 +55,10 @@ void printSparseMatrix(struct Sparse_matrix sparse[100])
 //CONVERT INPUT MATRIX TO SPARSE MATRIX (TUPLE FORM)
 void convertToSparseMatrix()
 {
-    int i, j, k = 0;
+    //FIRST ROW IS META-DATA: < no.of rows, no.of cols, no.of non-zero entries >
+    sparse1[0].row = MATRIX_ROWS;
+    sparse1[0].col = MATRIX_COLS;
+    int i, j, k = 1;
     for (i = 0; i < MATRIX_ROWS; i++)
     {
         for (j = 0; j < MATRIX_COLS; j++)
@@ -70,15 +73,20 @@ void convertToSparseMatrix()
         }
     }
     SIZE = k;
+    sparse1[0].value = k - 1;
 }
 
 //FIND TRANSPOSE OF SPARSE MATRIX
 void transposeSparseMatrix()
 {
-    int i, j, k = 0, min_col;
+    //FIRST ROW IS META-DATA: < no.of rows, no.of cols, no.of non-zero entries >
+    transposeSparse[0].row = MATRIX_COLS;
+    transposeSparse[0].col = MATRIX_ROWS;
+    transposeSparse[0].value = sparse1[0].value;
+    int i, j, k = 1, min_col;
     for (i = 1; i <= MATRIX_COLS; i++)
     {
-        for (j = 0; j < SIZE; j++)
+        for (j = 1; j <= SIZE; j++)
         {
             if (sparse1[j].col == i)
             {
@@ -101,7 +109,7 @@ void convertSparseToNormal()
             transpose[i][j] = 0;
 
     //transpose[row][col] = value (-1 is added since tuple is 1 based indexing)
-    for (i = 0; i < SIZE; i++)
+    for (i = 1; i < SIZE; i++)
     {
         transpose[transposeSparse[i].row - 1][transposeSparse[i].col - 1] = transposeSparse[i].value;
     }
