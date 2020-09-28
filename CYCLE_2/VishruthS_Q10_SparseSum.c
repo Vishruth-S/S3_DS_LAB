@@ -1,7 +1,7 @@
 //CSL201 DATA STRUCTURES LAB ----- VISHRUTH S, CS3A, 61
-//CYCLE 2 QUESTION 11
+//CYCLE 2 QUESTION 10
 //PROGRAM TO CONVERT 2 SPARSE MATRICES TO TUPLE FORM
-//AND FIND THEIR PRODUCT. PRINT BOTH TUPLE AND NORMAL FORM OF PRODUCT
+//AND FIND THEIR SUM. PRINT BOTH TUPLE AND NORMAL FORM OF SUM
 
 #include <stdio.h>
 #define MAX_TERMS 100
@@ -18,21 +18,21 @@ struct Sparse_matrix sparse1[MAX_TERMS];
 struct Sparse_matrix sparse2[MAX_TERMS];
 int SIZE1, SIZE2;
 
-//Product MATRIX STRUCTURE AND SIZE
-struct Sparse_matrix sparseProduct[MAX_TERMS];
-int PRODUCT_SIZE;
+//SUM MATRIX STRUCTURE AND SIZE
+struct Sparse_matrix sparseSum[MAX_TERMS];
+int SUM_SIZE;
 
 //SIZE OF ROWS AND COLS OF INPUT MATRIX & RESULT MATRIX
-int matrix1[100][100], matrix2[100][100], matrixProduct[100][100];
-int MATRIX_ROWS1, MATRIX_COLS1, MATRIX_ROWS2, MATRIX_COLS2;
+const int MATRIX_ROWS, MATRIX_COLS;
+int matrix1[100][100], matrix2[100][100], matrixSum[100][100];
 
 //FUNCTION TO PRINT 2D MATRIX (NORMAL FORM)
-void printMatrix(int matrix[100][100], int rows, int cols)
+void printMatrix(int matrix[100][100])
 {
     int i, j;
-    for (i = 0; i < rows; i++)
+    for (i = 0; i < MATRIX_ROWS; i++)
     {
-        for (j = 0; j < cols; j++)
+        for (j = 0; j < MATRIX_COLS; j++)
         {
             printf("%4d", matrix[i][j]);
         }
@@ -56,13 +56,13 @@ void printSparseMatrix(struct Sparse_matrix sparse[100], int size)
 //CONVERT NORMAL MATRIX1 and MATRIX2 TO SPARSE MATRIX
 void convertToSparseMatrix()
 {
-    int i, j, k1 = 1, k2 = 1;
     //FIRST ROW IS META-DATA: < no.of rows, no.of cols, no.of non-zero entries >
-    sparse1[0].row = MATRIX_ROWS1;
-    sparse1[0].col = MATRIX_COLS1;
-    for (i = 0; i < MATRIX_ROWS1; i++)
+    sparse1[0].row = sparse2[0].row = MATRIX_ROWS;
+    sparse1[0].col = sparse2[0].col = MATRIX_COLS;
+    int i, j, k1 = 1, k2 = 1;
+    for (i = 0; i < MATRIX_ROWS; i++)
     {
-        for (j = 0; j < MATRIX_COLS1; j++)
+        for (j = 0; j < MATRIX_COLS; j++)
         {
             if (matrix1[i][j])
             {
@@ -71,18 +71,6 @@ void convertToSparseMatrix()
                 sparse1[k1].value = matrix1[i][j];
                 k1++;
             }
-        }
-    }
-    SIZE1 = k1;
-    sparse1[0].value = k1 - 1; //no.of non-zero entries
-
-    //FIRST ROW IS META-DATA: < no.of rows, no.of cols, no.of non-zero entries >
-    sparse2[0].row = MATRIX_ROWS2;
-    sparse2[0].col = MATRIX_COLS2;
-    for (i = 0; i < MATRIX_ROWS2; i++)
-    {
-        for (j = 0; j < MATRIX_COLS2; j++)
-        {
             if (matrix2[i][j])
             {
                 sparse2[k2].row = i + 1;
@@ -92,107 +80,125 @@ void convertToSparseMatrix()
             }
         }
     }
+    SIZE1 = k1;
+    sparse1[0].value = k1 - 1;
     SIZE2 = k2;
-    sparse2[0].value = k2 - 1; //no.of non-zero entries
+    sparse2[0].value = k2 - 1;
 }
 
-void calculateProduct()
+//FUNCTION TO CALCULATE SUM
+void CalculateSum()
 {
-    struct Sparse_matrix prod[100];
-    int i, j, k = 1;
-    prod[0].row = sparse1[0].col;
-    prod[0].col = sparse2[0].row;
-
-    //NAIVE WAY FOR CALCULATING PRODUCT
-    for (i = 1; i < SIZE1; i++)
+    //FIRST ROW IS META-DATA: < no.of rows, no.of cols, no.of non-zero entries >
+    sparseSum[0].row = sparse1[0].row;
+    sparseSum[0].col = sparse1[0].col;
+    int i = 1, j = 1, k = 1;
+    while (i < SIZE1 && j < SIZE2)
     {
-        for (j = 1; j < SIZE2; j++)
+        if (sparse1[i].row == sparse2[j].row && sparse1[i].col == sparse2[j].col) //IF SAME ROW & COL, ADD VALUES
         {
-            if (sparse1[i].col == sparse2[j].row)
+            sparseSum[k].row = sparse1[i].row;
+            sparseSum[k].col = sparse1[i].col;
+            sparseSum[k].value = sparse1[i].value + sparse2[j].value;
+            i++;
+            j++;
+        }
+        else if (sparse1[i].row == sparse2[j].row) //IF ROWS ARE SAME
+        {
+            sparseSum[k].row = sparse1[i].row;
+            if (sparse1[i].col < sparse2[j].col && i < SIZE1) //IF COL1 < COL2
             {
-                prod[k].row = sparse1[i].row;
-                prod[k].col = sparse2[j].col;
-                prod[k].value = sparse1[i].value * sparse2[j].value;
-                k++;
+                sparseSum[k].col = sparse1[i].col;
+                sparseSum[k].value = sparse1[i].value;
+                i++;
+            }
+            else //IF COL2 < COL1
+            {
+                sparseSum[k].col = sparse2[j].col;
+                sparseSum[k].value = sparse2[j].value;
+                j++;
             }
         }
-    }
-    prod[0].value = k - 1;
-
-    //THE ABOVE CALCULATED TUPLE HAS DUPLICATES WHOSE VALUES NEED TO BE ADDED TO GET FINAL RESULT
-    //(To see this intermediate product, use: printSparseMatrix(prod, k); )
-
-    sparseProduct[0].row = sparse1[0].col;
-    sparseProduct[0].col = sparse2[0].row;
-    int c = 1, sum;
-    //To Remove duplicates and add their value into the final product tuple
-    for (i = 1; i < k; i++)
-    {
-        sum = 0;
-        for (j = i + 1; j < k; j++)
+        else //IF ROWS ARE NOT SAME
         {
-            if (prod[i].row == prod[j].row && prod[i].col == prod[j].col && prod[j].row > 0) //Check if same row & col ,i.e, duplicate
+            if (sparse1[i].row < sparse2[j].row) //IF ROW1 < ROW2
             {
-                if (sum > 0)
-                    sum += prod[j].value;
-                else
-                    sum += prod[i].value + prod[j].value;
-                prod[j].row = prod[j].col = -1; //flagging duplicate values so that they are no longer considered
+                sparseSum[k].row = sparse1[i].row;
+                sparseSum[k].col = sparse1[i].col;
+                sparseSum[k].value = sparse1[i].value;
+                i++;
+            }
+            else //IF ROW2 < ROW1
+            {
+                sparseSum[k].row = sparse2[j].row;
+                sparseSum[k].col = sparse2[j].col;
+                sparseSum[k].value = sparse2[j].value;
+                j++;
             }
         }
-        if (prod[i].row > 0) //since already considered row will be flagged as -1, we check if row>0
-        {
-            sparseProduct[c].row = prod[i].row;
-            sparseProduct[c].col = prod[i].col;
-            sparseProduct[c].value = sum != 0 ? sum : prod[i].value;
-            c++;
-        }
+        k++;
     }
-    sparseProduct[0].value = c - 1;
-    PRODUCT_SIZE = c;
+    while (i < SIZE1) //THIS LOOP IS TO FILL UP REMAINING ELEMENTS IN SPARSE1
+    {
+        sparseSum[k].row = sparse1[i].row;
+        sparseSum[k].col = sparse1[i].col;
+        sparseSum[k].value = sparse1[i].value;
+        k++;
+        i++;
+    }
+    while (j < SIZE2) //THIS LOOP IS TO FILL UP REMAINING ELEMENT IN SPARSE2
+    {
+        sparseSum[k].row = sparse2[j].row;
+        sparseSum[k].col = sparse2[j].col;
+        sparseSum[k].value = sparse2[j].value;
+        k++;
+        j++;
+    }
+    SUM_SIZE = k;
+    sparseSum[0].value = k - 1;
 }
 
 //CONVERT TUPLE FORM BACK TO 2D MATRIX
 void convertSparseToNormal()
 {
     int i, j;
-    //INITILIAZE Product MATRIX WITH ALL ELEMENTS 0
-    for (i = 0; i < MATRIX_ROWS1; i++)
-        for (j = 0; j < MATRIX_COLS2; j++)
-            matrixProduct[i][j] = 0;
+    //INITILIAZE SUM MATRIX WITH ALL ELEMENTS 0
+    for (i = 0; i < MATRIX_COLS; i++)
+        for (j = 0; j < MATRIX_ROWS; j++)
+            matrixSum[i][j] = 0;
 
-    for (i = 1; i < PRODUCT_SIZE; i++)
+    for (i = 1; i < SUM_SIZE; i++)
     {
-        matrixProduct[sparseProduct[i].row - 1][sparseProduct[i].col - 1] = sparseProduct[i].value;
+        matrixSum[sparseSum[i].row - 1][sparseSum[i].col - 1] = sparseSum[i].value;
     }
 }
 
 int main()
 {
-    int i, j;
+    int i, j, row2, col2;
     printf("\nEnter Dimensions of matrix 1\n");
-    scanf("%d%d", &MATRIX_ROWS1, &MATRIX_COLS1);
+    scanf("%d%d", &MATRIX_ROWS, &MATRIX_COLS);
     printf("\nEnter Elements of matrix 1\n");
-    for (i = 0; i < MATRIX_ROWS1; i++)
-        for (j = 0; j < MATRIX_COLS1; j++)
+    for (i = 0; i < MATRIX_ROWS; i++)
+        for (j = 0; j < MATRIX_COLS; j++)
             scanf("%d", &matrix1[i][j]);
 
     printf("\nEnter Dimensions of matrix 2\n");
-    scanf("%d%d", &MATRIX_ROWS2, &MATRIX_COLS2);
-    if (MATRIX_COLS1 != MATRIX_ROWS2)
+    scanf("%d%d", &row2, &col2);
+    if (row2 != MATRIX_ROWS || col2 != MATRIX_COLS)
     {
-        printf("\nInvalid dimensions for Multiplication\n");
+        printf("\nInvalid dimensions for addition\n");
         return 0;
     }
     printf("\nEnter Elements of matrix 2\n");
-    for (i = 0; i < MATRIX_ROWS2; i++)
-        for (j = 0; j < MATRIX_COLS2; j++)
+    for (i = 0; i < MATRIX_ROWS; i++)
+        for (j = 0; j < MATRIX_COLS; j++)
             scanf("%d", &matrix2[i][j]);
 
     printf("\nEntered matrix 1\n");
-    printMatrix(matrix1, MATRIX_ROWS1, MATRIX_COLS1);
+    printMatrix(matrix1);
     printf("\nEntered matrix 2\n");
-    printMatrix(matrix2, MATRIX_ROWS2, MATRIX_COLS2);
+    printMatrix(matrix2);
 
     convertToSparseMatrix();
 
@@ -201,22 +207,14 @@ int main()
     printf("\n\nSparse Matrix 2 (Tuple form)");
     printSparseMatrix(sparse2, SIZE2);
 
-    calculateProduct();
-    printf("\n\nProduct of Sparse Matrices (Tuple form)");
-    printSparseMatrix(sparseProduct, PRODUCT_SIZE);
+    CalculateSum();
+
+    printf("\n\nSum of Sparse Matrices (Tuple form)");
+    printSparseMatrix(sparseSum, SUM_SIZE);
 
     convertSparseToNormal();
-    printf("\n\nProduct of matrices (Normal form)\n");
-    printMatrix(matrixProduct, MATRIX_ROWS1, MATRIX_COLS2);
-
-    // ===========TO VERIFY RESULT============//
-    // int k = 0, temp[100][100];
-    // for (i = 0; i < MATRIX_ROWS1; i++)
-    //     for (j = 0; j < MATRIX_COLS2; j++)
-    //         for (k = 0; k < MATRIX_COLS1; k++)
-    //             temp[i][j] += (matrix1[i][k] * matrix2[k][j]);
-    // printf("\nPROdUCT ACTUAL (CALCULATED DIRECTLY) \n");
-    // printMatrix(temp, MATRIX_ROWS1, MATRIX_COLS2);
+    printf("\n\nSum of matrices (Normal form)\n");
+    printMatrix(matrixSum);
 
     return 0;
 }
