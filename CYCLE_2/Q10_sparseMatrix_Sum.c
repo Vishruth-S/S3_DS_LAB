@@ -56,7 +56,10 @@ void printSparseMatrix(struct Sparse_matrix sparse[100], int size)
 //CONVERT NORMAL MATRIX1 and MATRIX2 TO SPARSE MATRIX
 void convertToSparseMatrix()
 {
-    int i, j, k1 = 0, k2 = 0;
+    //FIRST ROW IS META-DATA: < no.of rows, no.of cols, no.of non-zero entries >
+    sparse1[0].row = sparse2[0].row = MATRIX_ROWS;
+    sparse1[0].col = sparse2[0].col = MATRIX_COLS;
+    int i, j, k1 = 1, k2 = 1;
     for (i = 0; i < MATRIX_ROWS; i++)
     {
         for (j = 0; j < MATRIX_COLS; j++)
@@ -78,13 +81,18 @@ void convertToSparseMatrix()
         }
     }
     SIZE1 = k1;
+    sparse1[0].value = k1 - 1;
     SIZE2 = k2;
+    sparse2[0].value = k2 - 1;
 }
 
 //FUNCTION TO CALCULATE SUM
 void CalculateSum()
 {
-    int i = 0, j = 0, k = 0;
+    //FIRST ROW IS META-DATA: < no.of rows, no.of cols, no.of non-zero entries >
+    sparseSum[0].row = sparse1[0].row;
+    sparseSum[0].col = sparse1[0].col;
+    int i = 1, j = 1, k = 1;
     while (i < SIZE1 && j < SIZE2)
     {
         if (sparse1[i].row == sparse2[j].row && sparse1[i].col == sparse2[j].col) //IF SAME ROW & COL, ADD VALUES
@@ -147,6 +155,7 @@ void CalculateSum()
         j++;
     }
     SUM_SIZE = k;
+    sparseSum[0].value = k - 1;
 }
 
 //CONVERT TUPLE FORM BACK TO 2D MATRIX
@@ -158,7 +167,7 @@ void convertSparseToNormal()
         for (j = 0; j < MATRIX_ROWS; j++)
             matrixSum[i][j] = 0;
 
-    for (i = 0; i < SUM_SIZE; i++)
+    for (i = 1; i < SUM_SIZE; i++)
     {
         matrixSum[sparseSum[i].row - 1][sparseSum[i].col - 1] = sparseSum[i].value;
     }

@@ -65,7 +65,7 @@ void convertToSparseMatrix()
         {
             if (matrix[i][j])
             {
-                sparse1[k].row = i + 1;
+                sparse1[k].row = i + 1; // +1 since tuple is 1 based indexing
                 sparse1[k].col = j + 1;
                 sparse1[k].value = matrix[i][j];
                 k++;
@@ -73,16 +73,16 @@ void convertToSparseMatrix()
         }
     }
     SIZE = k;
-    sparse1[0].value = k - 1;
+    sparse1[0].value = k - 1; //value = no.of non-zero elements = k-1
 }
 
 //FIND TRANSPOSE OF SPARSE MATRIX
 void transposeSparseMatrix()
 {
     //FIRST ROW IS META-DATA: < no.of rows, no.of cols, no.of non-zero entries >
-    transposeSparse[0].row = MATRIX_COLS;
+    transposeSparse[0].row = MATRIX_COLS; //rows and cols are interchanged
     transposeSparse[0].col = MATRIX_ROWS;
-    transposeSparse[0].value = sparse1[0].value;
+    transposeSparse[0].value = sparse1[0].value; //value will be same for transpose
     int i, j, k = 1, min_col;
     for (i = 1; i <= MATRIX_COLS; i++)
     {
@@ -108,7 +108,7 @@ void convertSparseToNormal()
         for (j = 0; j < MATRIX_ROWS; j++)
             transpose[i][j] = 0;
 
-    //transpose[row][col] = value (-1 is added since tuple is 1 based indexing)
+    //transpose[row][col] = Tuple[i].value (-1 is added since tuple is 1 based indexing)
     for (i = 1; i < SIZE; i++)
     {
         transpose[transposeSparse[i].row - 1][transposeSparse[i].col - 1] = transposeSparse[i].value;
