@@ -128,15 +128,12 @@ void calculateProduct()
     //To Remove duplicates and add their value into the final product tuple
     for (i = 1; i < k; i++)
     {
-        sum = 0;
+        sum = prod[i].value;
         for (j = i + 1; j < k; j++)
         {
             if (prod[i].row == prod[j].row && prod[i].col == prod[j].col && prod[j].row > 0) //Check if same row & col ,i.e, duplicate
             {
-                if (sum > 0)
-                    sum += prod[j].value;
-                else
-                    sum += prod[i].value + prod[j].value;
+                sum += prod[j].value;
                 prod[j].row = prod[j].col = -1; //flagging duplicate values so that they are no longer considered
             }
         }
@@ -144,7 +141,7 @@ void calculateProduct()
         {
             sparseProduct[c].row = prod[i].row;
             sparseProduct[c].col = prod[i].col;
-            sparseProduct[c].value = sum != 0 ? sum : prod[i].value;
+            sparseProduct[c].value = sum;
             c++;
         }
     }
