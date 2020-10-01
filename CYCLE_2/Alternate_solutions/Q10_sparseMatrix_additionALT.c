@@ -224,6 +224,22 @@ int main()
             }
             printf("\n");
         }
+
+        //======TO VERIFY RESULT========//
+        // int temp[100][100];
+        // for (i = 0; i < m; i++)
+        //     for (j = 0; j < n; j++)
+        //         temp[i][j] = arr[i][j] + arr1[i][j];
+
+        // printf("\nActual Sum matrix is\n");
+        // for (i = 0; i < m; i++)
+        // {
+        //     for (j = 0; j < n; j++)
+        //     {
+        //         printf("%d \t", temp[i][j]);
+        //     }
+        //     printf("\n");
+        // }
     }
 
     else
