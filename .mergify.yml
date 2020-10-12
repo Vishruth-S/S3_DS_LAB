@@ -3,8 +3,9 @@ pull_request_rules:
     conditions:
       - "#approved-reviews-by>=1"
     actions:
+      comment:
+        message: Awesome :thumbsup:, Thanks for contributing :smiley:.
       merge:
         method: merge
-      comment:
-        message: Thanks for contributing :smiley:. 
+
  
