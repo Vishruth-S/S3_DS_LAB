@@ -6,4 +6,5 @@ pull_request_rules:
       merge:
         method: merge
       comment:
-        message: Thanks for contributing :smiley:.  
+        message: Thanks for contributing :smiley:. 
+ 
