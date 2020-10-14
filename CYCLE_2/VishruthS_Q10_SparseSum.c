@@ -146,7 +146,7 @@ void CalculateSum()
         k++;
         i++;
     }
-    while (j < SIZE2) //THIS LOOP IS TO FILL UP REMAINING ELEMENT IN SPARSE2
+    while (j < SIZE2) //THIS LOOP IS TO FILL UP REMAINING ELEMENTS IN SPARSE2
     {
         sparseSum[k].row = sparse2[j].row;
         sparseSum[k].col = sparse2[j].col;
@@ -215,6 +215,22 @@ int main()
     convertSparseToNormal();
     printf("\n\nSum of matrices (Normal form)\n");
     printMatrix(matrixSum);
+
+    // ======TO VERIFY RESULT========//
+    // int temp[100][100];
+    // for (i = 0; i < m; i++)
+    //     for (j = 0; j < n; j++)
+    //         temp[i][j] = arr[i][j] + arr1[i][j];
+
+    // printf("\nActual Sum matrix is\n");
+    // for (i = 0; i < m; i++)
+    // {
+    //     for (j = 0; j < n; j++)
+    //     {
+    //         printf("%d \t", temp[i][j]);
+    //     }
+    //     printf("\n");
+    // }
 
     return 0;
 }
