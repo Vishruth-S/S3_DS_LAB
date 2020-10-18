@@ -13,6 +13,8 @@ int getPrecedence(char c)
 {
     switch (c)
     {
+    case '$':
+        return 4;
     case '^':
         return 3;
     case '/':
@@ -41,7 +43,10 @@ bool isClosingBracket(char c)
 int main()
 {
     string s; //infix expression string
-    cout << "\nEnter infix expression  ";
+    cout << "\nRules for entering infix expression";
+    cout << "\n1) Enter expression without any spaces";
+    cout << "\n2) For unary - or +, use $. eg: a*-b must be entered as a*$b";
+    cout << "\n\nEnter infix expression  ";
     getline(cin, s);
 
     stack<char> operators; //operator stack
