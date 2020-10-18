@@ -12,5 +12,8 @@ g++ PostfixConverter.cpp -o PostfixConverter
 ```
 PostfixConverter
 ```
-Enter the infix expression without any spaces.    
+### Rules when entering Infix expression
+* Enter the infix expression without any spaces.   
+* If any unary `-` or `+`, use `$`. For eg: `a*-b` should be entered as `a*$b`  
+
 The corresponding postfix expression will be displayed.
