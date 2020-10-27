@@ -13,27 +13,27 @@ program_name
 ### CYCLE 1
 | Program no.      | Name | Solution Link    |
 | ----------- | ----------- |  -----------  |
-| 1      | Factorial (without recursion)       | Here's this   |
-| 2   | Factorial (with recursion)        | And more      |
-| 3   | Fibonacci (without recursion)        | And more      |
-| 4   | Fibonacci (with recursion)        | And more      |
-| 5   | Linear Search (without recursion)        | And more      |
-| 6   | Linear Search (with recursion)        | And more      |
-| 7   | Binary Search (without recursion)        | And more      |
-| 8   | Binary Search (with recursion)        | And more      |
+| 1      | Factorial (without recursion)       |  - |
+| 2   | Factorial (with recursion)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/Factorial%20with%20recursion.c)     |
+| 3   | Fibonacci (without recursion)        | -      |
+| 4   | Fibonacci (with recursion)        | -      |
+| 5   | Linear Search (without recursion)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/LinearSearchWithoutRecursion.c)     |
+| 6   | Linear Search (with recursion)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/LinearSeacrh_Recursion.c)      |
+| 7   | Binary Search (without recursion)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/BinarySearchWithoutRecursion.c)      |
+| 8   | Binary Search (with recursion)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/Binary%20Search%20with%20recursion.c)      |
 
-## CYCLE 2
+### CYCLE 2
 | Program no.      | Name | Solution Link    |
 | ----------- | ----------- |  -----------  |
-| 9      | Sparse Matrix Transpose    | Here's this   |
-| 10   | Sparse Matrix Addition        | And more      |
-| 11   | Sparse Matrix Multiplication        | And more      |
-| 12   | Stack using array        | And more      |
-| 13   | Queue using array        | And more      |
-| 14   | Multiple stack using array        | And more      |
-| 15   | Infix to postfix      | And more      |
-| 16   | Evaluation of postfix        | And more      |
-| 17   | Evaluation of prefix        | And more      |
-| 18   | Circular Queue using array       | And more      |
-| 19   | Deque using array       | And more      |
-| 20   | Polynomial addition using array        | And more      |
+| 9      | Sparse Matrix Transpose    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q9_SparseTranspose.c)   |
+| 10   | Sparse Matrix Addition        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q10_SparseSum.c)     |
+| 11   | Sparse Matrix Multiplication        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q11_SparseProduct.c)      |
+| 12   | Stack using array        | -      |
+| 13   | Queue using array        | -      |
+| 14   | Multiple stack using array        | -      |
+| 15   | Infix to postfix      | -      |
+| 16   | Evaluation of postfix        | -      |
+| 17   | Evaluation of prefix        | -      |
+| 18   | Circular Queue using array       | -      |
+| 19   | Deque using array       | -     |
+| 20   | Polynomial addition using array        | -      |
