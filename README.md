@@ -28,9 +28,9 @@ program_name
 | 9      | Sparse Matrix Transpose    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q9_SparseTranspose.c)   |
 | 10   | Sparse Matrix Addition        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q10_SparseSum.c)     |
 | 11   | Sparse Matrix Multiplication        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q11_SparseProduct.c)      |
-| 12   | Stack using array        | -      |
-| 13   | Queue using array        | -      |
-| 14   | Multiple stack using array        | -      |
+| 12   | Stack using array        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q12_arrayStack.c)      |
+| 13   | Queue using array        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q13_arrayQueue.c)      |
+| 14   | Multiple stack using array        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q14_arrayTwoStack.c)      |
 | 15   | Infix to postfix      | -      |
 | 16   | Evaluation of postfix        | -      |
 | 17   | Evaluation of prefix        | -      |
