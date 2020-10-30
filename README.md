@@ -1,4 +1,4 @@
-# S3_DS_LAB
+# S3 DS LAB
 Programs of CS-201 Data Structures Lab (Semester 3, KTU)
 
 
