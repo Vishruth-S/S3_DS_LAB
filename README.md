@@ -1,5 +1,5 @@
 # S3_DS_LAB
-Programs of S3 DS LAB.
+Programs of CS-201 Data Structures Lab (Semester 3, KTU)
 
 
 To run locally, fork this repository and clone it.  
@@ -13,10 +13,10 @@ program_name
 ### CYCLE 1
 | Program no.      | Name | Solution Link    |
 | ----------- | ----------- |  -----------  |
-| 1      | Factorial (without recursion)       |  - |
+| 1      | Factorial (without recursion)       |  [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/Factorial%20without%20recursion.c) |
 | 2   | Factorial (with recursion)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/Factorial%20with%20recursion.c)     |
-| 3   | Fibonacci (without recursion)        | -      |
-| 4   | Fibonacci (with recursion)        | -      |
+| 3   | Fibonacci (without recursion)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/Fibonacci%20without%20recursion.c)      |
+| 4   | Fibonacci (with recursion)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/Fibonacci%20with%20recursion.c)      |
 | 5   | Linear Search (without recursion)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/LinearSearchWithoutRecursion.c)     |
 | 6   | Linear Search (with recursion)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/LinearSeacrh_Recursion.c)      |
 | 7   | Binary Search (without recursion)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/BinarySearchWithoutRecursion.c)      |
