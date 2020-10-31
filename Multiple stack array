@@ -1,0 +1,198 @@
+/*Question No:14 :Design a method for keeping two stacks within a single linear array so that neither stacks overflow until all the memory is used, ( one grows from one side of the array and the other grows from the other side) . Write all operations of stacks. eg. PUSH(S,x) that pushes element x onto stack S, where is S one or other of these two stacks. Include all necessary error checks.*/
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<stdbool.h>
+
+int topA=-1,topB=10;
+int Max=10;
+
+bool isemptyA()
+{	if(topA==-1)
+		return true;
+	else
+		return false;
+}
+
+bool isemptyB()
+{	if(topB==10)			
+		return true;
+	else
+		return false;
+}
+
+bool isfullA()
+{	if(topA==topB-1)
+		return true;
+	else
+		return false;
+}
+
+bool isfullB()
+{	if(topB==topA+1)
+		return true;
+	else
+		return false;
+}									
+
+void push(int choice,int stack[10],int term)
+{	if(choice==1)	
+	{	if(isfullA())
+			printf("\nElement can't be added as stack is full");
+		else
+		{	topA++;
+			stack[topA]=term;
+		}
+	}
+	else	
+	{	if(isfullB())
+			printf("\nElement can't be added as stack is full");
+		else
+		{	topB--;
+			stack[topB]=term;
+		}
+	}	
+}
+
+int pop(int choice,int stack[10])
+{	int term;
+	if(choice==1)	
+	{	if(isemptyA())
+			return 0;
+		else
+		{	term=stack[topA];
+			topA--;
+			return term;
+		}
+	}	
+	else
+	{	if(isemptyB())
+			return 0;
+		else
+		{	term=stack[topB];
+			topB++;
+			return term;
+		}
+	}	
+}
+
+int peek(int choice,int stack[10])
+{	if(choice==1)	
+	{	if(isemptyA())
+			return 0;
+		else
+			return stack[topA];
+	}
+	else		
+	{	if(isemptyB())
+			return 0;
+		else
+			return stack[topB];
+	}		
+}
+
+void display(int choice,int stack[10])
+{	if(choice==1)	
+	{	if(isemptyA())
+			printf("Stack-A is empty");
+		else	
+		{	printf("Stack-A:  ");
+			for(int i=0;i<=topA;i++)
+			printf("%d  ",stack[i]);
+						
+		}
+	}			
+	else	
+	{	if(isemptyB())
+			printf("Stack-B is empty");
+		else		
+		{	printf("Stack-B:  ");
+			for(int i=9;i>=topB;i--)
+				printf("%d  ",stack[i]);
+				
+		}	
+	}
+	printf("\n");		
+}				
+void main()
+{
+
+int array[10],term,ch,choice;
+do{
+	printf("\nMENU");
+	printf("\n1.Add element to the stack");
+	printf("\n2.Delete element from stack");
+	printf("\n3.Get the topmost element of stack");
+	printf("\n4.Check if stack is empty");
+	printf("\n5.Check if stack is full");
+	printf("\n6.Display");
+	printf("\n7.Exit");
+	printf("\nEnter choice: ");
+	scanf("%d",&ch);
+	switch(ch)
+	{	case 1:printf("Enter element to be added: ");
+			scanf("%d",&term);
+			printf("Enter the stack to which the element has to be added (1/2): ");
+			scanf("%d",&choice);
+			if(choice=='A')
+				push(choice,array,term);
+			else
+				push(choice,array,term);	
+			break;
+		case 2:printf("Enter the stack from which element has to be deleted (1/2): ");
+			scanf("%d",&choice);
+			if(choice=='A')
+				term=pop(choice,array);
+			else
+				term=pop(choice,array);
+			if(term==0)
+				printf("Stack is empty\n");
+			else
+				printf("The element deleted is: %d\n",term);		
+			break;
+		case 3:printf("Enter the stack whose topmost element is to be found:");
+			scanf("%d",&choice);
+			if(choice=='A')
+				term=peek(choice,array);
+			else
+				term=peek(choice,array);
+			if(term==0)
+				printf("Stack is empty\n");
+			else
+				printf("Topmost elemenet of stack is: %d\n",term);		
+			break;		
+		case 4:printf("Enter the stack (1/2): ");
+			scanf("%d",&choice);
+			if(choice=='A')
+				term=isemptyA();
+			else
+				term=isemptyB();
+			if(term==true)
+				printf("Stack is empty\n");
+			else
+				printf("Stack is not empty\n");
+			break;
+		case 5:printf("Enter the stack (1/2): ");
+			scanf("%d",&choice);		
+			if(choice=='A')
+				term=isfullA();
+			else
+				term=isfullB();
+			if(term==true)
+				printf("Stack is full\n");
+			else
+				printf("Stack is not full\n");
+			break;
+		case 6:printf("Enter the stack name: ");
+			scanf("%d",&choice);
+			if(choice=='A')
+				display(choice,array);
+			else
+				display(choice,array);	
+			break;
+		case 7:		
+		default:exit(0);
+	}
+}while(ch<8);	
+}					
+										
