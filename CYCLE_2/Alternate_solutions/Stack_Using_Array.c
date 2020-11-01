@@ -1,4 +1,5 @@
 //Question No:12 :Write a C program to implement a stack using array
+//By Megha Mariam
 
 #include<stdio.h>
 #include<stdlib.h>
