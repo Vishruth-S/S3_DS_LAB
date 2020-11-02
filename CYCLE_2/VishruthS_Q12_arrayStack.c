@@ -2,7 +2,7 @@
 
 #define MAX 100
 
-int stack[100], top = -1; // stack array and top
+int stack[MAX], top = -1; // stack array and top
 
 // Push function to insert element
 void push(int data)
@@ -14,27 +14,36 @@ void push(int data)
 }
 
 // Pop function to pop element
-int pop()
+void pop()
 {
+    int del;
     if (top == -1)
         printf("\nStack empty");
     else
-        return stack[top--];
+    {
+        del = stack[top--];
+        printf("\nDeleted: %d", del);
+    }
 }
 
 // To print elements of stack
 void display()
 {
-    printf("\n");
-    for (int i = 0; i <= top; i++)
+    if (top == -1)
+        printf("\nStack empty");
+    else
     {
-        printf("%d ", stack[i]);
+        printf("\n");
+        for (int i = 0; i <= top; i++)
+        {
+            printf("%d ", stack[i]);
+        }
     }
 }
 
 int main()
 {
-    int ch, element, del;
+    int ch, element;
     do
     {
         printf("\n\nChoose operation");
@@ -51,8 +60,7 @@ int main()
             push(element);
             break;
         case 2:
-            del = pop();
-            printf("\nDeleted: %d", del);
+            pop();
             break;
         case 3:
             display();

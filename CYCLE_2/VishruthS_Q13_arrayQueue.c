@@ -4,7 +4,7 @@
 #define MAX 20
 
 int q[MAX]; // Array Queue
-int front = -1, rear = -1;
+int front = -1, rear = -1; // Initial value of front and rear
 
 // To check if Queue is full
 bool qIsFull()

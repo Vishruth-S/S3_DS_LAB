@@ -1,4 +1,4 @@
-# S3_DS_LAB
+# S3 DS LAB
 Programs of CS-201 Data Structures Lab (Semester 3, KTU)
 
 
@@ -28,7 +28,7 @@ program_name
 | 9      | Sparse Matrix Transpose    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q9_SparseTranspose.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/Add-index/CYCLE_2/Alternate_solutions/Elizabeth_Q9.c)   |
 | 10   | Sparse Matrix Addition        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q10_SparseSum.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/Add-index/CYCLE_2/Alternate_solutions/Q10_sparseMatrix_additionALT.c)     |
 | 11   | Sparse Matrix Multiplication        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q11_SparseProduct.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/Add-index/CYCLE_2/Alternate_solutions/VishruthS_Q11_SparseProduct_ALT.c)      |
-| 12   | Stack using array        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q12_arrayStack.c)      |
+| 12   | Stack using array        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q12_arrayStack.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/Alternate_solutions/Stack_Using_Array.c)      |
 | 13   | Queue using array        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q13_arrayQueue.c)      |
 | 14   | Multiple stack using array        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q14_arrayTwoStack.c)      |
 | 15   | Infix to postfix      | -      |

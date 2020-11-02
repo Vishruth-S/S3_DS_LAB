@@ -6,11 +6,11 @@ int Dstack[MAX];           // Single array for two stacks
 int top1 = -1, top2 = MAX; // For 2 stacks
 
 // Push function to insert element
-void push(int s, int el)
+void push(int stackNumber, int el)
 {
-    if (s == 1) // For stack 1
+    if (stackNumber == 1) // For stack 1
     {
-        if (top1 == top2 - 1)
+        if (top1 == top2 - 1)  // Stack full condition
         {
             printf("\nStack 1 full");
         }
@@ -19,9 +19,9 @@ void push(int s, int el)
             Dstack[++top1] = el;
         }
     }
-    else // For stack 2
+    else if(stackNumber == 2) // For stack 2
     {
-        if (top2 == top1 + 1)
+        if (top2 == top1 + 1) // Stack full condition
         {
             printf("\nStack 2 full");
         }
@@ -33,20 +33,20 @@ void push(int s, int el)
 }
 
 // Pop function to pop an element
-int pop(int s)
+int pop(int stackNumber)
 {
-    if (s == 1) // For stack 1
+    if (stackNumber == 1) // For stack 1
     {
-        if (top1 == -1)
+        if (top1 == -1) // Stack empty condition
         {
             printf("\nStack 1 empty");
             return -1;
         }
         return Dstack[top1--];
     }
-    else
+    else if(stackNumber == 2) // For stack 2
     {
-        if (top2 == MAX) // For stack 2
+        if (top2 == MAX) // Stack empty condition
         {
             printf("\nStack 2 empty");
             return -1;
@@ -56,9 +56,9 @@ int pop(int s)
 }
 
 // To display elements of stack
-void display(int s)
+void display(int stackNumber)
 {
-    if (s == 1) // For stack 1
+    if (stackNumber == 1) // For stack 1
     {
         if (top1 == -1)
         {
@@ -69,7 +69,7 @@ void display(int s)
         for (int i = 0; i <= top1; i++)
             printf("%d ", Dstack[i]);
     }
-    else // For stack 2
+    else if(stackNumber == 2) // For stack 2
     {
         if (top2 == MAX)
         {
@@ -85,9 +85,9 @@ void display(int s)
 int main()
 {
 
-    int stackNumber, ch, element, popped;
+    int sNum, ch, element, popped;
     printf("\nEnter stack number (1 or 2) ");
-    scanf("%d", &stackNumber);
+    scanf("%d", &sNum);
     do
     {
         printf("\n\nChoose operation");
@@ -102,18 +102,18 @@ int main()
         case 1:
             printf("\nEnter element to insert ");
             scanf("%d", &element);
-            push(stackNumber, element);
+            push(sNum, element);
             break;
         case 2:
-            popped = pop(stackNumber);
+            popped = pop(sNum);
             printf("\nPopped element %d ", popped);
             break;
         case 3:
-            display(stackNumber);
+            display(sNum);
             break;
         case 4:
             printf("\nEnter stack number (1 or 2)");
-            scanf("%d", &stackNumber);
+            scanf("%d", &sNum);
             break;
         }
     } while (ch < 5);
