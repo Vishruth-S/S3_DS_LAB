@@ -1,4 +1,5 @@
-//Write a C program to implement a stack using array
+// Write a C program to implement a stack using array
+// Done by Elizabeth Mathew
 
 #include<stdio.h>
 
