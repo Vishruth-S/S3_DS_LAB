@@ -19,10 +19,7 @@ int isempty()
 {
     if(top==-1)
         return 1;
-    else
-    {
-        return 0;
-    }
+    return 0;
 }
 
 void pop(int stack[])
@@ -49,11 +46,8 @@ void display(int stack[])
 }
 void main()
 {
-    int stack[5],n,ch,e;
-    char ch1;
-    ch1='y'; 
-    while(ch1=='y')
-    {
+    int stack[5],ch=5,e;
+    do{
         printf("\n1.Push\n2.Pop\n3.Peek\n4.Display");
         scanf("%d",&ch);
         if(ch==1)
@@ -61,7 +55,6 @@ void main()
             printf("Enter the element you have to push");
             scanf("%d",&e);
             push(stack,e);
-            display(stack);
         }
         if(ch==2)
         {
@@ -71,7 +64,10 @@ void main()
          if(ch==3)
         {
             peek(stack);
+        } 
+        if(ch==4)
+        {
+            display(stack);
         }
-    }
-
+    }while(ch<=4)
 }
