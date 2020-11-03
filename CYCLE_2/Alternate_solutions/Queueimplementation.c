@@ -1,4 +1,6 @@
 //Write a C program to implement a queue using array
+// By Elizabeth Mathew
+
 
 #include<stdio.h>
 int rear=-1,front=-1;
