@@ -31,7 +31,7 @@ program_name
 | 12   | Stack using array        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q12_arrayStack.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/Alternate_solutions/Stack_Using_Array.c), [Alternate2](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/Alternate_solutions/Stackimplementation.c)     |
 | 13   | Queue using array        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q13_arrayQueue.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/Alternate_solutions/Queueimplementation.c)     |
 | 14   | Multiple stack using array        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q14_arrayTwoStack.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/Alternate_solutions/Multiplestack.c)    |
-| 15   | Infix to postfix      | -      |
+| 15   | Infix to postfix      | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q15_Infix2postix.c)     |
 | 16   | Evaluation of postfix        | -      |
 | 17   | Evaluation of prefix        | -      |
 | 18   | Circular Queue using array       | -      |
