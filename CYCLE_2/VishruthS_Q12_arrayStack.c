@@ -1,3 +1,7 @@
+//CSL201 DATA STRUCTURES LAB ----- VISHRUTH S, CS3A, 61
+//CYCLE 2 QUESTION 12
+//To implement stack using an array
+
 #include <stdio.h>
 
 #define MAX 100
