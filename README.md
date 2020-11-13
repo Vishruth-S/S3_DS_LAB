@@ -37,3 +37,13 @@ program_name
 | 18   | Circular Queue using array       | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q18_CircularQ.c)      |
 | 19   | Deque using array       | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q19_Deque.c)     |
 | 20   | Polynomial addition using array        | -      |
+
+### CYCLE 3
+| Program no.      | Name | Solution Link    |
+| ----------- | ----------- |  -----------  |
+| 21      | Singly Linked List Operations    | *available by 21/11/2020* |
+| 22      | Reverse Linked List    | *available by 21/11/2020* |
+| 23      | Doubly Linked List Operations    | *available by 21/11/2020* |
+| 24      | Circular Linked List    | *available by 21/11/2020* |
+| 25      | Polynomial addition using Linked list   | *available by 28/11/2020* |
+| 26      | Polynomial multiplication using Linked list    | *available by 28/11/2020* |
