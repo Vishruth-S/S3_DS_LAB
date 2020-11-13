@@ -34,6 +34,6 @@ program_name
 | 15   | Infix to postfix      | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q15_Infix2postix.c)     |
 | 16   | Evaluation of postfix        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q16_postfixEval.c)      |
 | 17   | Evaluation of prefix        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q17_prefixEval.c)      |
-| 18   | Circular Queue using array       | -      |
-| 19   | Deque using array       | -     |
+| 18   | Circular Queue using array       | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q18_CircularQ.c)      |
+| 19   | Deque using array       | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q19_Deque.c)     |
 | 20   | Polynomial addition using array        | -      |
