@@ -25,15 +25,25 @@ program_name
 ### CYCLE 2
 | Program no.      | Name | Solution Link    |
 | ----------- | ----------- |  -----------  |
-| 9      | Sparse Matrix Transpose    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q9_SparseTranspose.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/Add-index/CYCLE_2/Alternate_solutions/Elizabeth_Q9.c)   |
+| 9      | Sparse Matrix Transpose    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q09_SparseTranspose.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/Add-index/CYCLE_2/Alternate_solutions/Elizabeth_Q9.c)   |
 | 10   | Sparse Matrix Addition        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q10_SparseSum.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/Add-index/CYCLE_2/Alternate_solutions/Q10_sparseMatrix_additionALT.c)     |
 | 11   | Sparse Matrix Multiplication        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q11_SparseProduct.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/Add-index/CYCLE_2/Alternate_solutions/VishruthS_Q11_SparseProduct_ALT.c)      |
 | 12   | Stack using array        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q12_arrayStack.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/Alternate_solutions/Stack_Using_Array.c), [Alternate2](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/Alternate_solutions/Stackimplementation.c)     |
 | 13   | Queue using array        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q13_arrayQueue.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/Alternate_solutions/Queueimplementation.c)     |
 | 14   | Multiple stack using array        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q14_arrayTwoStack.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/Alternate_solutions/Multiplestack.c)    |
-| 15   | Infix to postfix      | -      |
-| 16   | Evaluation of postfix        | -      |
-| 17   | Evaluation of prefix        | -      |
-| 18   | Circular Queue using array       | -      |
-| 19   | Deque using array       | -     |
-| 20   | Polynomial addition using array        | -      |
+| 15   | Infix to postfix      | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q15_Infix2postix.c)     |
+| 16   | Evaluation of postfix        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q16_postfixEval.c)      |
+| 17   | Evaluation of prefix        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q17_prefixEval.c)      |
+| 18   | Circular Queue using array       | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q18_CircularQ.c)      |
+| 19   | Deque using array       | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q19_Deque.c)     |
+| 20   | Polynomial addition using array        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q20_PolynomialAddArray.c)     |
+
+### CYCLE 3
+| Program no.      | Name | Solution Link    |
+| ----------- | ----------- |  -----------  |
+| 21      | Singly Linked List Operations    | *available by 21/11/2020* |
+| 22      | Reverse Linked List    | *available by 21/11/2020* |
+| 23      | Doubly Linked List Operations    | *available by 21/11/2020* |
+| 24      | Circular Linked List    | *available by 21/11/2020* |
+| 25      | Polynomial addition using Linked list   | *available by 28/11/2020* |
+| 26      | Polynomial multiplication using Linked list    | *available by 28/11/2020* |

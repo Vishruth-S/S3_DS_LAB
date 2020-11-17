@@ -1,3 +1,7 @@
+//CSL201 DATA STRUCTURES LAB ----- VISHRUTH S, CS3A, 61
+//CYCLE 2 QUESTION 14
+//To implement two stacks within a single array
+
 #include <stdio.h>
 
 #define MAX 20

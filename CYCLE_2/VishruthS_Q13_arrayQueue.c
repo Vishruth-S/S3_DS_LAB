@@ -1,3 +1,7 @@
+//CSL201 DATA STRUCTURES LAB ----- VISHRUTH S, CS3A, 61
+//CYCLE 2 QUESTION 13
+//To implement a Queue using an array
+
 #include <stdio.h>
 #include <stdbool.h>
 
