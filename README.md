@@ -42,8 +42,8 @@ program_name
 | Program no.      | Name | Solution Link    |
 | ----------- | ----------- |  -----------  |
 | 21      | Singly Linked List Operations    | *available on 21/11/2020* |
-| 22      | Reverse Linked List    | *available on 21/11/2020* |
-| 23      | Doubly Linked List Operations    | *available on 21/11/2020* |
-| 24      | Circular Linked List    | *available on 21/11/2020* |
+| 22      | Reverse Linked List    | *available on 25/11/2020* |
+| 23      | Doubly Linked List Operations    | *available on 25/11/2020* |
+| 24      | Circular Linked List    | *available on 25/11/2020* |
 | 25      | Polynomial addition using Linked list   | *available on 28/11/2020* |
 | 26      | Polynomial multiplication using Linked list    | *available on 28/11/2020* |
