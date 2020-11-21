@@ -1,3 +1,7 @@
+//CSL201 DATA STRUCTURES LAB ----- VISHRUTH S, CS3A, 61
+//CYCLE 2 QUESTION 20
+//PROGRAM TO ADD TWO POLYNOMIALS USING ARRAY
+
 #include <stdio.h>
 
 void inputPoly(int, int[2][100]);
