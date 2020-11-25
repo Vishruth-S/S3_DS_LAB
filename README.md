@@ -36,12 +36,12 @@ program_name
 | 17   | Evaluation of prefix        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q17_prefixEval.c)      |
 | 18   | Circular Queue using array       | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q18_CircularQ.c)      |
 | 19   | Deque using array       | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q19_Deque.c)     |
-| 20   | Polynomial addition using array        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q20_PolynomialAddArray.c)     |
+| 20   | Polynomial addition using array        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/VishruthS_Q20_PolynomialAddArray.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/Alternate_solutions/VishruthS_Q20_PolyAdd.c)     |
 
 ### CYCLE 3
 | Program no.      | Name | Solution Link    |
 | ----------- | ----------- |  -----------  |
-| 21      | Singly Linked List Operations    | *available on 21/11/2020* |
+| 21      | Singly Linked List Operations    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_3/VishruthS_Q21_LinkedList.c) |
 | 22      | Reverse Linked List    | *available on 25/11/2020* |
 | 23      | Doubly Linked List Operations    | *available on 25/11/2020* |
 | 24      | Circular Linked List    | *available on 25/11/2020* |
