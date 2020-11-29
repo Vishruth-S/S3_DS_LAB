@@ -45,5 +45,5 @@ program_name
 | 22      | Reverse a Linked List    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_3/VishruthS_Q22_ReverseLinkedList.c) |
 | 23      | Doubly Linked List Operations    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_3/VishruthS_Q23_DoublyLinkedList.c) |
 | 24      | Circular Linked List    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_3/VIshruthS_Q24_CircularLinkedList.c) |
-| 25      | Polynomial addition using Linked list   | *available on 28/11/2020* |
-| 26      | Polynomial multiplication using Linked list    | *available on 28/11/2020* |
+| 25      | Polynomial addition using Linked list   | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_3/VishruthS_Q25_polyAddLinked.c) |
+| 26      | Polynomial multiplication using Linked list    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_3/VishruthS_Q26_polyMultiply.c) |
