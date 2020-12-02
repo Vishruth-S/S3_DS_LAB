@@ -47,3 +47,9 @@ program_name
 | 24      | Circular Linked List    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_3/VIshruthS_Q24_CircularLinkedList.c) |
 | 25      | Polynomial addition using Linked list   | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_3/VishruthS_Q25_polyAddLinked.c) |
 | 26      | Polynomial multiplication using Linked list    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_3/VishruthS_Q26_polyMultiply.c) |
+
+### CYCLE 4
+| Program no.      | Name | Solution Link    |
+| ----------- | ----------- |  -----------  |
+| 27      | Hashing 1    | *Available on 10/12/2020* |
+| 28      | Hashing 2    | *Available on 10/12/2020* |
