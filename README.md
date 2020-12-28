@@ -51,5 +51,5 @@ program_name
 ### CYCLE 4
 | Program no.      | Name | Solution Link    |
 | ----------- | ----------- |  -----------  |
-| 27      | Hashing 1    | *Available on 21/12/2020* |
-| 28      | Hashing 2    | *Available on 21/12/2020* |
+| 27      | Hashing 1    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_4/VishruthS_Q27_Hashing1.c) |
+| 28      | Hashing 2    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_4/VishruthS_Q28_Hashing2.c) |
