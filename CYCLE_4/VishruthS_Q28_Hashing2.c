@@ -1,6 +1,6 @@
 //CSL201 DATA STRUCTURES LAB ----- VISHRUTH S, CS3A, 61
 //CYCLE 4 QUESTION 2
-//Given a natural language text, store each words in a hash table of size m=26 using the mod function. 
+//Given a natural language text, store each words in a hash table of size m=SIZE using the mod function. 
 //Find the number of key comparisons for a successful search, if the collision resolution technique used is 1) linear probing 2) Quadratic probing
 
 #include <stdio.h>
@@ -18,7 +18,7 @@ void hashWithLinearProbing(char word[], char hashTable[][20])
     while (hashTable[key + j][0] != '0')        // If already filled
     {
         j++;               // then move to next location, as per linear probing
-        if (key + j >= 26) // If index overflows size
+        if (key + j >= SIZE) // If index overflows size
             j = -SIZE + j; // Reset to 0
     }
     strcpy(hashTable[key + j], word); // Copy the word to the hashTable at obtained index
@@ -47,11 +47,11 @@ void searchLinearProbing(char queryWord[], char hashTable[][20])
     int key = (int)(tolower(queryWord[0]) - 'a') % SIZE; // Applying mod function with first letter
     while (strcmp(hashTable[key + j], queryWord) != 0)   // While not found
     {
-        count++;                          // increase count
-        j++;                              // move to next index as per linear probing
-        if (key + j >= 26)                // If index overflows size
-            j = -SIZE + j;                // Reset to 0
-        if (hashTable[key + j][0] == '0') // If it reaches an empty index, it means element doesn't exist
+        count++;                                          // increase count of comparisons
+        j++;                                              // move to next index as per linear probing
+        if (key + j >= SIZE)                              // If index overflows size
+            j = -SIZE + j;                                // Reset to 0
+        if (hashTable[key + j][0] == '0' || count > SIZE) // If it reaches an empty index or comparisons exceed SIZE, it means element doesn't exist
         {
             printf("Element Not found\n");
             printf("Number of comparisons made: %d\n", count);
@@ -69,12 +69,12 @@ void searchQuadraticProbing(char queryWord[], char hashTable[][20])
     int key = (int)(tolower(queryWord[0]) - 'a') % SIZE; // Applying mod function with first letter
     while (strcmp(hashTable[key + j], queryWord) != 0)   // While not found
     {
-        count++; // increase count
+        count++; // increase count of comparisons
         i++;
-        j = i * i;                        // move to next index as per Quadratic probing
-        if (key + j >= SIZE)              // If index overflows size
-            j = -SIZE + j;                // Reset to 0
-        if (hashTable[key + j][0] == '0') // If it reaches an empty index, it means element doesn't exist
+        j = i * i;                                        // move to next index as per Quadratic probing
+        if (key + j >= SIZE)                              // If index overflows size
+            j = -SIZE + j;                                // Reset to 0
+        if (hashTable[key + j][0] == '0' || count > SIZE) // If it reaches an empty index or comparisons exceed SIZE, it means element doesn't exist
         {
             printf("Element Not found\n");
             printf("Number of comparisons made: %d\n", count);
@@ -102,7 +102,7 @@ int main()
     char q[20];
     printf("Enter number of words\n");
     scanf("%d", &n);
-    if (n > 26)
+    if (n > SIZE)
     {
         printf("\nSorry, max size exceeded");
         return 0;
