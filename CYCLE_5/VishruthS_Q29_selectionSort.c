@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-void selectionSort(int arr[], int size)
+void selectionSort(int arr[], int size) // Time complexity: O(n^2)
 {
     int minIndex, temp;
     for (int i = 0; i < size; i++) // move starting point of unsorted array one-by-one
