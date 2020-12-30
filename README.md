@@ -53,3 +53,13 @@ program_name
 | ----------- | ----------- |  -----------  |
 | 27      | Hashing 1    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_4/VishruthS_Q27_Hashing1.c) |
 | 28      | Hashing 2    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_4/VishruthS_Q28_Hashing2.c) |
+
+### CYCLE 5
+| Program no.      | Name | Solution Link    |
+| ----------- | ----------- |  -----------  |
+| 29      | Selection Sort   | *Available soon* |
+| 30     | Insertion Sort    | *Available soon* |
+| 31      | Quick Sort   | *Available soon* |
+| 32     | Merge Sort    | *Available soon* |
+| 33      | Heap Sort   | *Available soon* |
+
