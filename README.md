@@ -60,6 +60,6 @@ program_name
 | 29      | Selection Sort   | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_5/VishruthS_Q29_selectionSort.c) |
 | 30     | Insertion Sort    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_5/VishruthS_Q30_insertionSort.c) |
 | 31      | Quick Sort   | *Available soon* |
-| 32     | Merge Sort    | *Available soon* |
+| 32     | Merge Sort    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_5/VishruthS_Q31_mergeSort.c) |
 | 33      | Heap Sort   | *Available by 16/01/2021* |
 
