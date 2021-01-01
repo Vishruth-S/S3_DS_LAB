@@ -63,3 +63,14 @@ program_name
 | 32     | Merge Sort    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_5/VishruthS_Q31_mergeSort.c) |
 | 33      | Heap Sort   | *Available by 16/01/2021* |
 
+### CYCLE 6
+| Program no.      | Name | Solution Link    |
+| ----------- | ----------- |  -----------  |
+| 34      | Binary Tree Traversal    | *Available soon* |
+| 35      | Binary Tree Operations    | *Available soon* |
+
+### CYCLE 7
+| Program no.      | Name | Solution Link    |
+| ----------- | ----------- |  -----------  |
+| 36      | Depth First Search    | *Available by 09/01/2021* |
+| 37      | Binary Tree Operations    | *Available by 09/01/2021* |
