@@ -73,4 +73,4 @@ program_name
 | Program no.      | Name | Solution Link    |
 | ----------- | ----------- |  -----------  |
 | 36      | Depth First Search    | *Available by 09/01/2021* |
-| 37      | Binary Tree Operations    | *Available by 09/01/2021* |
+| 37      | Breadth First Search    | *Available by 09/01/2021* |
