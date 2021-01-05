@@ -66,11 +66,11 @@ program_name
 ### CYCLE 6
 | Program no.      | Name | Solution Link    |
 | ----------- | ----------- |  -----------  |
-| 34      | Binary Tree Traversal    | *Available soon* |
-| 35      | Binary Tree Operations    | *Available soon* |
+| 34      | Binary Search Tree Traversal    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_6/VishruthS_Q34_BST-Traversal.c) |
+| 35      | Binary Search Tree Operations    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_6/VishruthS_Q35_BST-Operations.c) |
 
 ### CYCLE 7
 | Program no.      | Name | Solution Link    |
 | ----------- | ----------- |  -----------  |
-| 36      | Depth First Search    | *Available by 09/01/2021* |
-| 37      | Breadth First Search    | *Available by 09/01/2021* |
+| 36      | Depth First Search    | *Available by 16/01/2021* |
+| 37      | Breadth First Search    | *Available by 16/01/2021* |
