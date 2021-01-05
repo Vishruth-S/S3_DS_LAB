@@ -1,5 +1,5 @@
 //CSL201 DATA STRUCTURES LAB ----- VISHRUTH S, CS3A, 61
-//CYCLE 5 QUESTION 3
+//CYCLE 5 QUESTION 4
 //Program to implement Merge Sort
 
 #include <stdio.h>
