@@ -14,7 +14,8 @@ struct Node *createNode(int);
 struct Node *FindMinimum(struct Node *);
 void inorder(struct Node *);
 
-// ======= To insert a newNode ======= //
+// ================ TO INSERT A NEW NODE ================= //
+// Method 1: Recursive
 // Time complexity: O(logn)
 struct Node *insertNode(struct Node *root, int data)
 {
@@ -22,13 +23,43 @@ struct Node *insertNode(struct Node *root, int data)
         root = createNode(data);                     // then a new node is created
     else if (data <= root->data)                     // if data is less than current data,
         root->left = insertNode(root->left, data);   // then node to be inserted in left sub-tree
-    else                                             //else if data is greater than current data
+    else                                             // else if data is greater than current data
         root->right = insertNode(root->right, data); // then node to be inserted in right sub-tree
 
     return root;
 }
 
-// ===== To search for a node ======= //
+// Method 2: Iterative
+// Time complexity: O(logn)
+struct Node *insertNode_Iterative(struct Node *root, int data)
+{
+    struct Node *newNode = createNode(data); // new node is created
+    if (root == NULL)                        // if root is null, then new node must be root node
+        return newNode;                      // so return it
+
+    struct Node *curr = root, *parent = NULL;
+    while (curr) // traversing the tree
+    {
+        parent = curr;                   // points to parent node
+        if (newNode->data <= curr->data) // if data is less than current data
+        {
+            curr = curr->left;          // then go to the left sub-tree
+            if (curr == NULL)           // if current becomes null
+                parent->left = newNode; // then new node should be inserted here
+        }
+        else // if data is greater than current data
+        {
+            curr = curr->right;          // then go to the right sub-tree
+            if (curr == NULL)            // if current becomes null
+                parent->right = newNode; // then new node should be inserted here
+        }
+    }
+
+    return root;
+}
+
+// =================== TO SEARCH FOR NODE ===================== //
+// Method 1: Recursive
 // Time complexity: O(logn)
 bool Search(struct Node *root, int data)
 {
@@ -41,6 +72,23 @@ bool Search(struct Node *root, int data)
         return Search(root->left, data);  // then continue searching in left sub-tree
     else                                  // else if data is greater than current data
         return Search(root->right, data); // then continue searching in right sub-tree
+}
+
+// Method 2: Iterative
+// Time complexity: O(logn)
+bool Search_Iterative(struct Node *root, int data)
+{
+    struct Node *curr = root;
+    while (curr) // traversing the tree
+    {
+        if (curr->data == data)      // if data is equal to search Query
+            return true;             // return true
+        else if (data <= curr->data) // else if data less than current data
+            curr = curr->left;       // then go to left sub-tree
+        else                         // else if data is greater than current data
+            curr = curr->right;      // then go to right sub-tree
+    }
+    return false; // if it reaches here, it means curr = NULL, or data doesn't exist in tree
 }
 
 // ===== To delete a node ======== //

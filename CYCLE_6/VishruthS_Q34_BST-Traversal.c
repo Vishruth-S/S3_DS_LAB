@@ -104,4 +104,6 @@ struct Node *createNode(int data)
     newNode->data = data;
     newNode->left = NULL;
     newNode->right = NULL;
+
+    return newNode;
 }
