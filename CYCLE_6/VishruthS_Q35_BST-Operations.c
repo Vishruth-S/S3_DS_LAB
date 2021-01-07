@@ -1,3 +1,9 @@
+//CSL201 DATA STRUCTURES LAB ----- VISHRUTH S, CS3A, 61
+//CYCLE 6 QUESTION 2
+//Program  to implement a binary search tree
+//and perform insert, search and delete operations
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
