@@ -13,14 +13,14 @@ program_name
 ### CYCLE 1
 | Program no.      | Name | Solution Link    |
 | ----------- | ----------- |  -----------  |
-| 1      | Factorial (without recursion)       |  [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/Factorial%20without%20recursion.c) |
-| 2   | Factorial (with recursion)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/Factorial%20with%20recursion.c)     |
-| 3   | Fibonacci (without recursion)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/Fibonacci%20without%20recursion.c)      |
-| 4   | Fibonacci (with recursion)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/Fibonacci%20with%20recursion.c)      |
-| 5   | Linear Search (without recursion)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/LinearSearchWithoutRecursion.c)     |
-| 6   | Linear Search (with recursion)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/LinearSeacrh_Recursion.c)      |
-| 7   | Binary Search (without recursion)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/BinarySearchWithoutRecursion.c)      |
-| 8   | Binary Search (with recursion)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/Binary%20Search%20with%20recursion.c)      |
+| 1      | Factorial (iterative)       |  [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/Factorial%20without%20recursion.c) |
+| 2   | Factorial (recursive)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/Factorial%20with%20recursion.c)     |
+| 3   | Fibonacci (iterative)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/Fibonacci%20without%20recursion.c)      |
+| 4   | Fibonacci (recursive)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/Fibonacci%20with%20recursion.c)      |
+| 5   | Linear Search (iterative)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/LinearSearchWithoutRecursion.c)     |
+| 6   | Linear Search (recursive)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/LinearSeacrh_Recursion.c)      |
+| 7   | Binary Search (iterative)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/BinarySearchWithoutRecursion.c)      |
+| 8   | Binary Search (recursive)        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_1/Binary%20Search%20with%20recursion.c)      |
 
 ### CYCLE 2
 | Program no.      | Name | Solution Link    |
@@ -72,5 +72,5 @@ program_name
 ### CYCLE 7
 | Program no.      | Name | Solution Link    |
 | ----------- | ----------- |  -----------  |
-| 36      | Depth First Search    | *Available by 16/01/2021* |
-| 37      | Breadth First Search    | *Available by 16/01/2021* |
+| 36      | Depth First Search    | *Available soon* |
+| 37      | Breadth First Search    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_7/VishruthS_Q37_BFS-traversal.c) |
