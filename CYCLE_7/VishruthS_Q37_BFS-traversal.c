@@ -1,6 +1,6 @@
 //CSL201 DATA STRUCTURES LAB ----- VISHRUTH S, CS3A, 61
 //CYCLE 7 QUESTION 2
-//Program to perfom Breadth First Search on a graph 
+//Program to perfom Breadth First Traversal on a graph 
 //represented using the adjacency matrix
 
 #include <stdio.h>
@@ -64,7 +64,7 @@ int main()
     addEdge(graph, 5, 8);
     addEdge(graph, 7, 8);
 
-    printf("\nBreadth first traversal from node 1");
+    printf("\nBreadth first traversal from node 1\n");
     breadthFirstTraversal(graph, 1);
 
     return 0;
