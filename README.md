@@ -72,5 +72,5 @@ program_name
 ### CYCLE 7
 | Program no.      | Name | Solution Link    |
 | ----------- | ----------- |  -----------  |
-| 36      | Depth First Search    | *Available soon* |
-| 37      | Breadth First Search    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_7/VishruthS_Q37_BFS-traversal.c) |
+| 36      | Depth First Search Traversal   | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_7/VishruthS_Q36_DFS-traversal.c) |
+| 37      | Breadth First Search Traversal   | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_7/VishruthS_Q37_BFS-traversal.c) |
