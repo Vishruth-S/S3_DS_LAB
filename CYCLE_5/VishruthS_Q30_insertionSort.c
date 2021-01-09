@@ -25,12 +25,13 @@ int main()
     int arr[100], size;
     printf("\nEnter size ");
     scanf("%d", &size);
-    printf("\nEnter array ");
+    printf("\nEnter array\n");
     for (int i = 0; i < size; i++)
         scanf("%d", &arr[i]);
 
     insertionSort(arr, size);
 
+    printf("Sorted array\n");
     for (int i = 0; i < size; i++)
         printf("%d ", arr[i]);
 
