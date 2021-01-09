@@ -72,5 +72,5 @@ program_name
 ### CYCLE 7
 | Program no.      | Name | Solution Link    |
 | ----------- | ----------- |  -----------  |
-| 36      | Depth First Search Traversal   | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_7/VishruthS_Q36_DFS-traversal.c) |
+| 36      | Depth First Search Traversal   | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_7/VishruthS_Q36_DFS_traversal.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_7/Alternate%20Solutions/VishruthS_Q36_DFS-traversal_Recursive.c) |
 | 37      | Breadth First Search Traversal   | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_7/VishruthS_Q37_BFS-traversal.c) |
