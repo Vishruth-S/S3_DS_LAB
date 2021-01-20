@@ -1,10 +1,5 @@
-//CSL201 DATA STRUCTURES LAB ----- VISHRUTH S, CS3A, 61
-//CYCLE 5 QUESTION 3
-//Program to implement Quick Sort
-
 #include <stdio.h>
 
-// function to swap 2 elements
 void swap(int *x, int *y)
 {
     int t = *x;
@@ -15,17 +10,23 @@ void swap(int *x, int *y)
 // Partition function
 int partition(int arr[], int left, int right)
 {
-    int pivot = arr[right]; // pivot element
-    int pIndex = left;      // smaller index
-
-    for (int i = left; i < right; i++)
+    int pivot = arr[left];
+    int pIndex = left;
+    while (left < right)
     {
-        if (arr[i] < pivot)                // if current element is less than pivot
-            swap(&arr[i], &arr[pIndex++]); // swap and incerement smaller index
-    }
-    swap(&arr[pIndex], &arr[right]); // swap smaller index with pivot
+        while (left < right && arr[left] <= pivot)
+            left++;
 
-    return pIndex;
+        while (arr[right] > pivot)
+            right--;
+
+        if (left < right)
+            swap(&arr[left], &arr[right]);
+    }
+    arr[pIndex] = arr[right];
+    arr[right] = pivot;
+
+    return right;
 }
 
 void quickSort(int arr[], int left, int right)
@@ -43,12 +44,13 @@ int main()
     int arr[100], size;
     printf("\nEnter size ");
     scanf("%d", &size);
-    printf("\nEnter array ");
+    printf("\nEnter array\n");
     for (int i = 0; i < size; i++)
         scanf("%d", &arr[i]);
 
     quickSort(arr, 0, size - 1);
 
+    printf("\nSorted array\n");
     for (int i = 0; i < size; i++)
         printf("%d ", arr[i]);
 
