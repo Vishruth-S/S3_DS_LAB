@@ -18,7 +18,7 @@ int qPop();
 bool qEmpty();
 
 // ============ BREADTH FIRST TRAVERSAL ============= //
-// Time complexity: O(V*V) - using adjacency matrix of V vertices
+// Time complexity: O(V*V) (when using adjacency matrix of V vertices)
 void breadthFirstTraversal(int graph[][V], int u)
 {
     int visited[V] = {0}; // initilaze visited array to keep track of visited nodes
@@ -29,8 +29,8 @@ void breadthFirstTraversal(int graph[][V], int u)
     int curr_node;
     while (!qEmpty())
     {
-        curr_node = qPop();       // get a node from the front of the queue
-        printf("%d ", curr_node); // and print its value
+        curr_node = qPop();          // get a node from the front of the queue
+        printf("%d -> ", curr_node); // and print its value
 
         for (int i = 0; i < V; i++) // traverse through all nodes to get the adjacent vertices of current node
         {
@@ -44,6 +44,7 @@ void breadthFirstTraversal(int graph[][V], int u)
 }
 
 void addEdge(int[][V], int, int);
+void printAdjacencyMatrix(int[][V]);
 
 // === MAIN FUNCTION === //
 int main()
@@ -64,9 +65,13 @@ int main()
     addEdge(graph, 5, 8);
     addEdge(graph, 7, 8);
 
+    printf("\nAdjacency matrix\n");
+    printAdjacencyMatrix(graph);
+
     printf("\nBreadth first traversal from node 1\n");
     breadthFirstTraversal(graph, 1);
 
+    printf("\n");
     return 0;
 }
 
@@ -102,4 +107,22 @@ int qPop()
 bool qEmpty()
 {
     return front == -1 && rear == -1;
+}
+
+// function to print adjacency matrix
+void printAdjacencyMatrix(int graph[][V])
+{
+    for (int k = 0; k <= V; k++)
+        printf("%3d ", k);
+    printf("\n");
+    for (int k = 0; k <= V; k++)
+        printf("____");
+    printf("\n");
+    for (int i = 0; i < V; i++)
+    {
+        printf("%2d|", i + 1);
+        for (int j = 0; j < V; j++)
+            printf("%3d ", graph[i][j]);
+        printf("\n");
+    }
 }
