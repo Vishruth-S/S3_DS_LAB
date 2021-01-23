@@ -61,7 +61,7 @@ program_name
 | 30     | Insertion Sort    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_5/VishruthS_Q30_insertionSort.c) |
 | 31      | Quick Sort   | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_5/VishruthS_Q31_quickSort.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_5/Alternate_Solutions/QuickSort.c) |
 | 32     | Merge Sort    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_5/VishruthS_Q32_mergeSort.c) |
-| 33      | Heap Sort   | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_5/VishruthS_Q33_heapSort.c) |
+| 33      | Heap Sort   | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_5/VishruthS_Q33_heapSort.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_5/Alternate_Solutions/heapSort_Iterative.c) |
 
 ### CYCLE 6
 | Program no.      | Name | Solution Link    |
