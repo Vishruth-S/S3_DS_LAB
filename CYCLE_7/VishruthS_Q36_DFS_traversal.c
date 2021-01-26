@@ -39,7 +39,6 @@ void depthFirstTraversal(int graph[][V], int u)
 }
 
 void addEdge(int[][V], int, int);
-void printAdjacencyMatrix(int[][V]);
 
 // === MAIN FUNCTION === //
 int main()
@@ -60,8 +59,16 @@ int main()
     addEdge(graph, 5, 8);
     addEdge(graph, 7, 8);
 
-    printf("\nAdjacency matrix\n");
-    printAdjacencyMatrix(graph);
+    //     graph for reference
+    //                 6
+    //                /
+    //       1      5
+    //     /   \  / | \
+    //    4     2 ---- 7
+    //     \   /  \ | /
+    //       3      8
+    //     /   \
+    //    9    10 
 
     printf("\nDepth first traversal from node 1\n");
     depthFirstTraversal(graph, 1);
@@ -96,22 +103,4 @@ int stackPop()
 bool stackEmpty()
 {
     return top == -1;
-}
-
-// function to print adjacency matrix
-void printAdjacencyMatrix(int graph[][V])
-{
-    for (int k = 0; k <= V; k++)
-        printf("%3d ", k);
-    printf("\n");
-    for (int k = 0; k <= V; k++)
-        printf("____");
-    printf("\n");
-    for (int i = 0; i < V; i++)
-    {
-        printf("%2d|", i + 1);
-        for (int j = 0; j < V; j++)
-            printf("%3d ", graph[i][j]);
-        printf("\n");
-    }
 }

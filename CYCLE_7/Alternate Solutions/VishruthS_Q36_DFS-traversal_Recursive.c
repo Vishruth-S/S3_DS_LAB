@@ -44,6 +44,18 @@ int main()
     addEdge(graph, 5, 8);
     addEdge(graph, 7, 8);
 
+    //     graph for reference
+    //                 6
+    //                /
+    //       1      5
+    //     /   \  / | \
+    //    4     2 ---- 7
+    //     \   /  \ | /
+    //       3      8
+    //     /   \
+    //    9    10 
+
+
     printf("\nDepth first traversal from node 1\n");
     depthFirstTraversal(graph, 1);
 
