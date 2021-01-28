@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-#define V 11
+#define V 15
 
 // ===== Queue and its functions ===== //
 const int qSize = 100;
@@ -19,7 +19,7 @@ bool qEmpty();
 
 // ============ BREADTH FIRST TRAVERSAL ============= //
 // Time complexity: O(V*V) (when using adjacency matrix of V vertices)
-void breadthFirstTraversal(int graph[][V], int u)
+void breadthFirstTraversal(int graph[][V], int numV, int u)
 {
     int visited[V] = {0}; // initilaze visited array to keep track of visited nodes
 
@@ -32,7 +32,7 @@ void breadthFirstTraversal(int graph[][V], int u)
         curr_node = qPop();          // get a node from the front of the queue
         printf("%d -> ", curr_node); // and print its value
 
-        for (int i = 0; i < V; i++) // traverse through all nodes to get the adjacent vertices of current node
+        for (int i = 0; i <= numV; i++) // traverse through all nodes to get the adjacent vertices of current node
         {
             if (graph[curr_node][i] == 1 && visited[i] == 0) // if there is an edge connecting current node to another unvisited node
             {
@@ -44,39 +44,35 @@ void breadthFirstTraversal(int graph[][V], int u)
 }
 
 void addEdge(int[][V], int, int);
+void printAdjacencyMatrix(int[][V], int);
 
 // === MAIN FUNCTION === //
 int main()
 {
+
     int graph[V][V] = {0}; // initiliazing Adjacency Matrix
+    int numVertices, numEdges, l;
+    printf("Enter the number of vertices in the graph  ");
+    scanf("%d", &numVertices);
+    for (int i = 1; i <= numVertices; i++)
+    {
+        printf("\nEnter the number of edges from %d : ", i);
+        scanf("%d", &numEdges);
+        for (int j = 0; j < numEdges; j++)
+        {
+            printf("\nEnter the connection %d : ", j + 1);
+            scanf("%d", &l);
+            addEdge(graph, i, l);
+        }
+    }
+    printf("\nAdjacency matrix\n");
+    printAdjacencyMatrix(graph, numVertices);
 
-    addEdge(graph, 1, 2); // adding edges between graph nodes
-    addEdge(graph, 1, 4);
-    addEdge(graph, 2, 3);
-    addEdge(graph, 2, 5);
-    addEdge(graph, 2, 7);
-    addEdge(graph, 2, 8);
-    addEdge(graph, 3, 4);
-    addEdge(graph, 3, 10);
-    addEdge(graph, 3, 9);
-    addEdge(graph, 5, 6);
-    addEdge(graph, 5, 7);
-    addEdge(graph, 5, 8);
-    addEdge(graph, 7, 8);
-
-    //     graph for reference
-    //                 6
-    //                /
-    //       1      5
-    //     /   \  / | \
-    //    4     2 ---- 7
-    //     \   /  \ | /
-    //       3      8
-    //     /   \
-    //    9    10
-
-    printf("\nBreadth first traversal from node 1\n");
-    breadthFirstTraversal(graph, 1);
+    int startNode;
+    printf("\nEnter the start vertex\n");
+    scanf("%d", &startNode);
+    printf("\nDepth first traversal from node %d\n", startNode);
+    breadthFirstTraversal(graph, numVertices, startNode);
 
     printf("\n");
     return 0;
@@ -114,4 +110,27 @@ int qPop()
 bool qEmpty()
 {
     return front == -1 && rear == -1;
+}
+
+// function to print adjacency matrix
+void printAdjacencyMatrix(int graph[][V], int numV)
+{
+    int i, j;
+    printf("   ");
+    for (int k = 1; k <= numV; k++)
+        printf("%3d ", k);
+    printf("\n");
+    for (int k = 0; k <= numV; k++)
+        printf("____");
+    printf("\n");
+    for (i = 1; i <= numV; i++)
+    {
+        printf("%2d|", i);
+        for (j = 1; j <= numV; j++)
+        {
+            printf("%3d ", graph[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n\n\n");
 }

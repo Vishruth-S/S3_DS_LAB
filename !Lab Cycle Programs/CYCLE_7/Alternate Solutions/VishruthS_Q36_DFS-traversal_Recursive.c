@@ -2,62 +2,58 @@
 //CYCLE 7 QUESTION 1
 //Program to perfom Depth First Traversal on a graph 
 //represented using the adjacency matrix
-
 #include <stdio.h>
 #include <stdbool.h>
 
-#define V 11
+#define V 12
 
 int visited[V] = {0}; // to keep track of visited nodes
 
 // ================ DEPTH FIRST TRAVERSAL ============== //
 // Time complexity: O(V*V) (when using adjacency matrix of V vertices)
-void depthFirstTraversal(int graph[][V], int u)
+void depthFirstTraversal(int graph[][V], int numV, int u)
 {
-    visited[u] = 1;             // mark current node as visited
-    printf("%d ", u);           // and print its value
-    for (int i = 0; i < V; i++) // for every node in the graph
+    visited[u] = 1;                 // mark current node as visited
+    printf("%d ", u);               // and print its value
+    for (int i = 0; i <= numV; i++) // for every node in the graph
     {
         if (graph[u][i] == 1 && visited[i] == 0) // if it is adjacent and not visited
-            depthFirstTraversal(graph, i);       // then go to that node
+            depthFirstTraversal(graph, numV, i); // then go to that node
     }
 }
 
 void addEdge(int[][V], int, int);
+void printAdjacencyMatrix(int[][V], int);
 
 // === MAIN FUNCTION === //
 int main()
 {
+
     int graph[V][V] = {0}; // initiliazing Adjacency Matrix
+    int numVertices, numEdges, l;
+    printf("Enter the number of vertices in the graph  ");
+    scanf("%d", &numVertices);
+    for (int i = 1; i <= numVertices; i++)
+    {
+        printf("\nEnter the number of edges from %d : ", i);
+        scanf("%d", &numEdges);
+        for (int j = 0; j < numEdges; j++)
+        {
+            printf("\nEnter the connection %d : ", j + 1);
+            scanf("%d", &l);
+            addEdge(graph, i, l);
+        }
+    }
 
-    addEdge(graph, 1, 2); // adding edges between graph nodes
-    addEdge(graph, 1, 4);
-    addEdge(graph, 2, 3);
-    addEdge(graph, 2, 5);
-    addEdge(graph, 2, 7);
-    addEdge(graph, 2, 8);
-    addEdge(graph, 3, 4);
-    addEdge(graph, 3, 10);
-    addEdge(graph, 3, 9);
-    addEdge(graph, 5, 6);
-    addEdge(graph, 5, 7);
-    addEdge(graph, 5, 8);
-    addEdge(graph, 7, 8);
+    int startNode;
+    printf("\nEnter the start vertex\n");
+    scanf("%d", &startNode);
 
-    //     graph for reference
-    //                 6
-    //                /
-    //       1      5
-    //     /   \  / | \
-    //    4     2 ---- 7
-    //     \   /  \ | /
-    //       3      8
-    //     /   \
-    //    9    10 
-
-
-    printf("\nDepth first traversal from node 1\n");
-    depthFirstTraversal(graph, 1);
+    printf("\nAdjacency matrix\n");
+    printAdjacencyMatrix(graph, numVertices);
+    
+    printf("\nDepth first traversal from node %d\n", startNode);
+    depthFirstTraversal(graph, numVertices, startNode);
 
     return 0;
 }
@@ -67,4 +63,27 @@ void addEdge(int graph[][V], int u, int v)
 {
     graph[u][v] = 1;
     graph[v][u] = 1;
+}
+
+// function to print adjacency matrix
+void printAdjacencyMatrix(int graph[][V], int numV)
+{
+    int i, j;
+    printf("   ");
+    for (int k = 1; k <= numV; k++)
+        printf("%3d ", k);
+    printf("\n");
+    for (int k = 0; k <= numV; k++)
+        printf("____");
+    printf("\n");
+    for (i = 1; i <= numV; i++)
+    {
+        printf("%2d|", i);
+        for (j = 1; j <= numV; j++)
+        {
+            printf("%3d ", graph[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n\n\n");
 }
