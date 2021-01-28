@@ -1,4 +1,4 @@
-// program to find the predecessor of a given node in a singly linked list.
+// program to find the successor of a given node in a singly linked list.
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -10,7 +10,7 @@ struct Node
 };
 
 // Time complexity O(n), space complexity: O(1)
-void findPredecessor(struct Node *head, int queryData)
+void findSuccessor(struct Node *head, int queryData)
 {
     if (head == NULL)
     {
@@ -18,27 +18,15 @@ void findPredecessor(struct Node *head, int queryData)
         return;
     }
 
-    if (head->data == queryData)
-    {
-        printf("\nEntered node is head node, no predecessor\n");
-        return;
-    }
-
-    struct Node *curr = head, *prev = NULL;
-    int position = -1;
-    while (curr)
-    {
-        position++;
-        if (curr->data == queryData)
-        {
-            printf("\nPredeccesor of %d is %d, found at position %d\n", queryData, prev->data, position);
-            return;
-        }
-        prev = curr;
+    struct Node *curr = head;
+    while (curr && curr->data != queryData)
         curr = curr->next;
-    }
-
-    printf("\nEntered node doesn't exist in list\n");
+    if (!curr)
+        printf("\nEntered node doesn't exist in list\n");
+    else if (!curr->next)
+        printf("\nEntered node is tail, no successor found\n");
+    else
+        printf("\nSuccessor %d", curr->next->data);
 }
 
 struct Node *insertAtHead(struct Node *, int);
@@ -56,9 +44,9 @@ int main()
     printf("\nLinked list\n");
     display(head);
     int n;
-    printf("\nEnter the data of the node whose predecessor is to be found\n");
+    printf("\nEnter the data of the node whose succesor is to be found\n");
     scanf("%d", &n);
-    findPredecessor(head, n);
+    findSuccessor(head, n);
 
     return 0;
 }
