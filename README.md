@@ -17,20 +17,23 @@ program_name
 
 ### 3) Stacks and Queues
 
-### 3) Hashing Algorithms
+### 4) Hashing Algorithms
 
-### 4) Sorting Algorithms
+### 5) Sorting Algorithms
 
-### 5) Trees
+### 6) Trees
 
-### 6) Graphs  
+### 7) Graphs  
 
 <hr/>
 
 ## 1) Application of Arrays
 
 #### Basics
-* Sparse matrices
+* Sparse matrix Addition
+* Sparse matrix multilplication
+* Polynomial addition
+* Polynomial multiplication
 
 ## 2) Linked Lists
 
@@ -68,3 +71,69 @@ program_name
 ### Advanced
 * Detect cycle in a linked list
 * Rotate linked list by k places
+
+## 3) Stacks and Queues
+
+### Basics
+* Implement stack using array
+* Implement stack using linked list
+* Implement queue using array
+* Implement queue using linked list
+* Implement circular queue 
+* Implement Deque
+
+
+### Easy
+* Reverse a number using stack
+* Check for palindrome using stack
+* Check for valid parentheses
+* Convert infix expression to postfix
+* Evaluate postfix expression
+* Evaluate prefix expression
+
+### Medium
+* Implement queue using two stacks
+* Implement stack using two queues
+* Implement priority queue
+
+## 4) Hashing Algorithms
+
+### Basics
+* Insert set of keys into a hash table of given size using division method and linear probing.
+* Store each words of a natural language text in a hash table of given size using the mod function and perform search. 
+
+## 5) Sorting Algorithms
+
+### Basics
+* Bubble Sort
+* Selection Sort
+* Insertion Sort
+* Merge Sort
+* Quick Sort
+* Heap Sort
+
+## 6) Trees
+
+### Basics
+* Linked and Sequential representation of binary trees
+* Preorder, Inorder, Postorder traversal (Recursive and Iterative)
+* Level order Traversal
+* Find height, number of nodes and number of vertices
+* Implement Binary Search Tree (BST)
+* Insertion, Deletion, Searching in BST
+
+### Easy
+* Create linked representation of binary tree from sequential and vice versa
+* Find minimum and maximum in a BST
+* Count leaf nodes
+
+### Medium
+* Find sum of each level in a tree
+
+## 7) Graphs
+
+### Basics
+* Adjacency Matrix representation
+* Adjacency List representation
+* Depth First Search and Traversal (Recursive and Iterative)
+* Breadth First Search and Traversal
