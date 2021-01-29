@@ -71,7 +71,7 @@ int main()
     int startNode;
     printf("\nEnter the start vertex\n");
     scanf("%d", &startNode);
-    printf("\nDepth first traversal from node %d\n", startNode);
+    printf("\nBreadth first traversal from node %d\n", startNode);
     breadthFirstTraversal(graph, numVertices, startNode);
 
     printf("\n");
