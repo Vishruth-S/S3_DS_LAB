@@ -10,17 +10,11 @@ program_name
 # Table of contents
 
 ### 1) Application of Arrays
-
 ### 2) Linked Lists
-
 ### 3) Stacks and Queues
-
 ### 4) Hashing Algorithms
-
 ### 5) Sorting Algorithms
-
 ### 6) Trees
-
 ### 7) Graphs  
 
 <hr/>
@@ -53,6 +47,7 @@ program_name
 * Swap any two nodes
 * Print middle node
 * Swap head and tail
+* Count number of nodes in circular linked lists
 * Count even and odd nodes
 * Concatenate two linked lists
 * Swap first half with second half
@@ -64,13 +59,18 @@ program_name
 * Remove duplicates from linked list
 * Remove all occurences of a given element
 * Copy common elements into third linked list
+* Split into 3 linked list based on value
+* Check if a list of words form a palindrome
+* Find distance between two given nodes in a circular linked list
 
+### Hard
+* Merge two sorted linked lists in O(1) extra space
+* Rotate a linked list by k places
 
-### Advanced
+### Miscellaneous
 * Detect cycle in a linked list
-* Rotate linked list by k places
 
-## 3) Stacks and Queues
+## 3) Stacks, Queues and Heaps
 
 ### Basics
 * Implement stack using array
@@ -79,7 +79,9 @@ program_name
 * Implement queue using linked list
 * Implement circular queue 
 * Implement Deque
-
+* Max Heap and Min heap
+* Insert and delete from heap
+* Heapify an array
 
 ### Easy
 * Reverse a number using stack
@@ -93,6 +95,7 @@ program_name
 * Implement queue using two stacks
 * Implement stack using two queues
 * Implement priority queue
+
 
 ## 4) Hashing Algorithms
 
@@ -110,6 +113,10 @@ program_name
 * Quick Sort
 * Heap Sort
 
+### Miscellaneous
+* Randomized quick sort
+* Counting sort
+
 ## 6) Trees
 
 ### Basics
@@ -124,9 +131,16 @@ program_name
 * Create linked representation of binary tree from sequential and vice versa
 * Find minimum and maximum in a BST
 * Count leaf nodes
+* print all elements in a given range in a BST
 
 ### Medium
+* Find all ancestors of a given node
+* Check if a binary tree is a binary search tree
 * Find sum of each level in a tree
+* Find kth smallest element in a BST
+
+### Miscellaneous
+* Invert a binary tree
 
 ## 7) Graphs
 
