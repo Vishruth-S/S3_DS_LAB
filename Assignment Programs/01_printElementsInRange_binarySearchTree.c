@@ -11,14 +11,17 @@ struct Node
     struct Node *right;
 };
 
+// Time complexity: O(n), Space complexity: O(1)
 void printElementsInRange(struct Node *root, int k1, int k2)
 {
     if (root == NULL)
         return;
-    printElementsInRange(root->left, k1, k2);
+    if (k1 < root->data)
+        printElementsInRange(root->left, k1, k2);
     if (k1 <= root->data && root->data <= k2)
         printf("%d ", root->data);
-    printElementsInRange(root->right, k1, k2);
+    if (k2 > root->data)
+        printElementsInRange(root->right, k1, k2);
 }
 
 void inorder(struct Node *);
@@ -39,7 +42,7 @@ int main()
     int k1, k2;
     printf("\nEnter k1 and k2\n");
     scanf("%d %d", &k1, &k2);
-    printf("\nNodes having values in range (%d,%d)\n", k1, k2);
+    printf("\nNodes having values in range [%d,%d]\n", k1, k2);
     printElementsInRange(root, k1, k2);
     return 0;
 }
