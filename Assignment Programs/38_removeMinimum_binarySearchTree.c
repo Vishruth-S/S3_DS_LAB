@@ -1,4 +1,4 @@
-// Find and delete maximum value in a Binary Search Tree
+// Program to remove the minimum element from a Binary Search Tree
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,34 +9,35 @@ struct Node
     struct Node *left;
     struct Node *right;
 };
+
 struct Node *root = NULL;
 
 // Time complexity
 // - Worst case (in case of skewed tree) - O(n) , Average case (for balanced tree) - O(logn)
-int removeMaximum()
+int removeMinimum()
 {
     if (root == NULL)
         return -1;
     struct Node *curr = root, *parent = NULL;
-    while (curr->right) // keep going right so as to get maximum value
+    while (curr->left) // keep going left so as to get minimum value
     {
         parent = curr;
-        curr = curr->right;
+        curr = curr->left;
     }
-    int maxi = curr->data; // copy maximum value,  so as to return later
+    int minimum = curr->data; // copy minimum value, so as to return later
 
     // now delete the node
-    if (curr == root)      // if node to be deleted is root
-        root = root->left; // then make root as its left child
+    if (curr == root)       // if it is root node
+        root = root->right; // then make new root as its right child
 
-    else if (curr->left)            // if node to be deleted has a left child
-        parent->right = curr->left; // link this child to parent of current node
+    else if (curr->right)           // if it has a right child
+        parent->left = curr->right; // link this child to parent of current node
 
     else // if leaf node, no children
-        parent->right = NULL;
+        parent->left = NULL;
 
     free(curr);
-    return maxi;
+    return minimum;
 }
 
 struct Node *insertIntoTree(int);
@@ -52,7 +53,6 @@ int main()
     root = insertIntoTree(65);
     root - insertIntoTree(5);
     root - insertIntoTree(10);
-    root - insertIntoTree(48);
 
     //    for reference
     //           24
@@ -60,20 +60,20 @@ int main()
     //        16    41
     //       / \   / \
     //      5  23 31 65
-    //               /
-    //             48
+    //       \
+    //       10
 
     printf("\nBinary Search Tree Inorder\n");
     displayInorder(root);
-    int maxi = removeMaximum();
-    printf("\nMaximum: %d", maxi);
-    printf("\nBST inorder after removing maximum\n");
+    int mini = removeMinimum(root);
+    printf("\n\nMinimum value: %d", mini);
+    printf("\n\nBST inorder after removing minimum\n");
     displayInorder(root);
-    return 0;
 }
 
 struct Node *insertIntoTree(int data)
 {
+    struct Node *curr = root, *parent = NULL;
     struct Node *newNode = (struct Node *)malloc(sizeof(struct Node));
     newNode->data = data;
     newNode->left = NULL;
@@ -81,7 +81,6 @@ struct Node *insertIntoTree(int data)
     if (root == NULL)
         return newNode;
 
-    struct Node *curr = root, *parent = NULL;
     while (curr)
     {
         parent = curr;
@@ -98,6 +97,7 @@ struct Node *insertIntoTree(int data)
                 parent->right = newNode;
         }
     }
+
     return root;
 }
 

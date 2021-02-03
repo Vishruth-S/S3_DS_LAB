@@ -9,13 +9,13 @@ program_name
 
 # Table of contents
 
-### 1) Application of Arrays
-### 2) Linked Lists
-### 3) Stacks and Queues
-### 4) Hashing Algorithms
-### 5) Sorting Algorithms
-### 6) Trees
-### 7) Graphs  
+#### 1) Application of Arrays
+#### 2) Linked Lists
+#### 3) Stacks, Queues and Heaps
+#### 4) Hashing Algorithms
+#### 5) Sorting Algorithms
+#### 6) Trees
+#### 7) Graphs  
 
 <hr/>
 
@@ -136,8 +136,14 @@ program_name
 ### Medium
 * Find all ancestors of a given node
 * Check if a binary tree is a binary search tree
+* Find sum of all left leaves and right leaves
 * Find sum of each level in a tree
 * Find kth smallest element in a BST
+* Merge 2 binary trees
+
+### Hard
+* Delete all nodes in a given range
+
 
 ### Miscellaneous
 * Invert a binary tree
@@ -149,3 +155,4 @@ program_name
 * Adjacency List representation
 * Depth First Search and Traversal (Recursive and Iterative)
 * Breadth First Search and Traversal
+
