@@ -151,10 +151,16 @@ program_name
 
 ### Hard
 * [Delete all nodes in a given range](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/deleteInRange_binarySearchTree.c)
+* Merge 2 binary trees
+* Create binary tree when Preorder & Inorder given
+* Create binary tree when Postorder & Inorder given
 
 
 ### Miscellaneous
 * [Invert a binary tree](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/invertBinaryTree.c)
+* DFS Spanning tree
+* BFS Spanning tree
+* Minimum cost spanning tree (using Kruskal's Algorithm)
 
 ## 7) Graphs
 
@@ -164,3 +170,10 @@ program_name
 * Depth First Search and Traversal (Recursive and Iterative)
 * Breadth First Search and Traversal
 
+### Miscellaneous
+* Detect cycle in a graph
+* Minimum spanning trees
+* Topological Sorting
+* Dijkstra's Algorithm
+* Bellman-Ford Algorithm
+* Floyd-Warshall Algorithm
