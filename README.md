@@ -21,7 +21,7 @@ program_name
 
 ## 1) Application of Arrays
 
-#### Basics
+### Basics
 * [Sparse matrix Addition](/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q10_SparseSum.c)
 * [Sparse matrix multilplication](/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q11_SparseProduct.c)
 * [Polynomial addition](/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q20_PolynomialAddArray.c)
@@ -44,7 +44,6 @@ program_name
 ### Easy
 * [Find minimum and maximum value](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/65_findMinMax_linkedList.c)
 * [Reverse a linked list](/!Lab%20Cycle%20Programs/CYCLE_3/VishruthS_Q22_ReverseLinkedList.c)
-* [Merge two sorted linked lists](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/47_merge2SortedList-inPlace_linkedList.c)
 * [Swap any two adjacent nodes](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/44_swapNodes_linkedList.c)
 * [Print middle node](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/29_PrintMiddleNode_linkedList.c)
 * [Swap head and tail](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/04_SwapHeadTail_linkedList.c)
@@ -56,7 +55,7 @@ program_name
 
 ### Medium
 * [Insert into sorted linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/17_insertIntoSorted_linkedList.c)
-* Sort a linked list
+* Sort a linked list - [MergeSort](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/63_Sort_linkedList_MergeSort.c), [BubbleSort](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/63_Sort_linkedList_BubbleSort.c), [SelectionSort](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/63_Sort_linkedList_SelectionSort.c)
 * [Remove duplicates from linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/09_RemoveDuplicates_linkedList.c)
 * [Remove all occurences of a given element](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/06-51_RemoveOccurences_linkedList.c)
 * [Copy common elements into third linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/32_CopyCommonElements_linkedList.c)
@@ -64,9 +63,10 @@ program_name
 * [Split into odd and even linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/36_splitOddEven_linkedList.c)
 * Check if a list of words form a palindrome
 * Find distance between two given nodes in a circular linked list
+* [Find union of 2 linked lists](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/60_union_linkedList.c)
 
 ### Hard
-* Merge two sorted linked lists in O(1) extra space
+* [Merge two sorted linked lists in-place](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/47_merge2SortedList-inPlace_linkedList.c)
 * Rotate a linked list by k places
 
 ### Miscellaneous
@@ -75,12 +75,12 @@ program_name
 ## 3) Stacks, Queues and Heaps
 
 ### Basics
-* Implement stack using array
+* [Implement stack using array](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q12_arrayStack.c)
 * Implement stack using linked list
-* Implement queue using array
-* Implement queue using linked list
-* Implement circular queue 
-* Implement Deque
+* [Implement queue using array](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q13_arrayQueue.c)
+* [Implement queue using linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/priorityQueue_linkedList.c)
+* [Implement circular queue](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q18_CircularQ.c)
+* [Implement Deque](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q19_Deque.c)
 * Max Heap and Min heap
 * Insert and delete from heap
 * Heapify an array
@@ -89,32 +89,32 @@ program_name
 * [Reverse a number using stack](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/03_ReverseNumber.c)
 * Check for palindrome using stack
 * [Check for valid parentheses](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/41_ValidBrackets.c)
-* Convert infix expression to postfix
-* Evaluate postfix expression
-* Evaluate prefix expression
+* [Convert infix expression to postfix](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q15_Infix2postix.c)
+* [Evaluate postfix expression](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q17_prefixEval.c)
+* [Evaluate prefix expression](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q16_postfixEval.c)
 * [Reverse elements a queue using stack](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/43_ReverseElementsQueue_Stack.c)
 
 ### Medium
 * Implement queue using two stacks
 * Implement stack using two queues
-* Implement priority queue
+* Implement priority queue - [using Linked List](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/queue_linkedList.c)
 
 
 ## 4) Hashing Algorithms
 
 ### Basics
-* Insert set of keys into a hash table of given size using division method and linear probing.
-* Store each words of a natural language text in a hash table of given size using the mod function and perform search. 
+* [Insert set of keys into a hash table of given size using division method and linear probing.](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_4/VishruthS_Q27_Hashing1.c)
+* [Store each words of a natural language text in a hash table of given size using the mod function and perform search.](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_4/VishruthS_Q28_Hashing2.c) 
 
 ## 5) Sorting Algorithms
 
 ### Basics
 * Bubble Sort
-* Selection Sort
-* Insertion Sort
-* Merge Sort
-* Quick Sort
-* Heap Sort
+* [Selection Sort](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_5/VishruthS_Q29_selectionSort.c)
+* [Insertion Sort](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_5/VishruthS_Q30_insertionSort.c)
+* [Merge Sort](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_5/VishruthS_Q32_mergeSort.c)
+* [Quick Sort](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_5/VishruthS_Q31_quickSort.c)
+* [Heap Sort](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_5/VishruthS_Q33_heapSort.c)
 
 ### Miscellaneous
 * Randomized quick sort
@@ -124,13 +124,12 @@ program_name
 
 ### Basics
 * Linked and Sequential representation of binary trees
-* Preorder Traversal (Recursive and [Iterative](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/02-23_PreorderTraversalIterative_binaryTree.c))
-* Inorder Traversal (Recursive and [Iterative](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/31_inorder-Iterative_binaryTree.c))
-* Postorder traversal (Recursive and Iterative)
+* Preorder Traversal ([Recursive](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_6/VishruthS_Q34_BST-Traversal.c) and [Iterative](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/02-23_PreorderTraversalIterative_binaryTree.c))
+* Inorder Traversal ([Recursive](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_6/VishruthS_Q34_BST-Traversal.c) and [Iterative](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/31_inorder-Iterative_binaryTree.c))
+* Postorder traversal ([Recursive](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_6/VishruthS_Q34_BST-Traversal.c) and Iterative)
 * [Level order Traversal](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/binaryTree_LevelOrderTraversal.c)
 * [Find height, number of nodes and number of vertices](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/08-52_findHeight_binaryTree.c)
-* Implement Binary Search Tree (BST)
-* Insertion, Deletion, Searching in BST
+* [Implement Binary Search Tree (BST) and perform insertion, searching and deletion](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_6/VishruthS_Q35_BST-Operations.c)
 
 ### Easy
 * Create linked representation of binary tree from sequential and vice versa
@@ -167,8 +166,8 @@ program_name
 ### Basics
 * Adjacency Matrix representation
 * Adjacency List representation
-* Depth First Search and Traversal (Recursive and Iterative)
-* Breadth First Search and Traversal
+* Depth First Search and Traversal - [Recursive](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_7/Alternate%20Solutions/VishruthS_Q36_DFS-traversal_Recursive.c) and [Iterative](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_7/VishruthS_Q36_DFS_traversal.c)
+* [Breadth First Search and Traversal](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_7/VishruthS_Q37_BFS_traversal.c)
 
 ### Miscellaneous
 * Detect cycle in a graph
