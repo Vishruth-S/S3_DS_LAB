@@ -62,7 +62,7 @@ program_name
 * [Split into 3 linked list based on value](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/22_splitIntoThree_linkedList.c)
 * [Split into odd and even linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/36_splitOddEven_linkedList.c)
 * Check if a list of words form a palindrome
-* Find distance between two given nodes in a circular linked list
+* [Find distance between two given nodes in a circular linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/45_findDistance_circularLinkedList.c)
 * [Find union of 2 linked lists](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/60_union_linkedList.c)
 
 ### Hard
@@ -76,7 +76,7 @@ program_name
 
 ### Basics
 * [Implement stack using array](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q12_arrayStack.c)
-* Implement stack using linked list
+* [Implement stack using linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/stack_linkedList.c)
 * [Implement queue using array](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q13_arrayQueue.c)
 * [Implement queue using linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/priorityQueue_linkedList.c)
 * [Implement circular queue](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q18_CircularQ.c)
@@ -132,7 +132,8 @@ program_name
 * [Implement Binary Search Tree (BST) and perform insertion, searching and deletion](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_6/VishruthS_Q35_BST-Operations.c)
 
 ### Easy
-* Create linked representation of binary tree from sequential and vice versa
+* Create [linked representation of binary tree from sequential](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/10-27-59_sequentialToLinked_binaryTree.c) and vice versa
+* [Check if linked and sequential represented binary trees are same](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/07-19_checkIfSame_binaryTree.c)
 * [Find minimum and maximum in a BST](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/13_FindMinMax_binarySearchTree.c)
 * [Count and delete leaf nodes](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/34_DeleteLeafNodes_binarySearchTree.c)
 * [Count degree of nodes](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/14_countDegreeOfNodes_binaryTree.c)
@@ -144,13 +145,12 @@ program_name
 * Find sum of all left leaves and right leaves
 * Find sum of each level in a tree
 * Find kth smallest element in a BST
-* Merge 2 binary trees
 * [Find and remove maximum element in a BST](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/26_RemoveMax_binarySearchTree.c)
 * [Find and remove minimum element in a BST](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/38_removeMinimum_binarySearchTree.c)
 
 ### Hard
 * [Delete all nodes in a given range](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/deleteInRange_binarySearchTree.c)
-* Merge 2 binary trees
+* [Merge 2 binary trees](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/mergeBinaryTrees.c)
 * Create binary tree when Preorder & Inorder given
 * Create binary tree when Postorder & Inorder given
 
