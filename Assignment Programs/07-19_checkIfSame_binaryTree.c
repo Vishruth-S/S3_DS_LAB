@@ -34,6 +34,26 @@ bool checkIfSame(int tree1[], int i, int n, struct Node *tree2)
         && checkIfSame(tree1, (2 * i + 2), n, tree2->right);
 }
 
+// Same logic as above, but a bit shorter code
+// Time complexity: O(n)
+bool checkIfSame_alternate(int tree1[], int i, int n, struct Node *tree2)
+{
+    if (tree2 == NULL && i >= n) // base case, both empty
+        return true;
+
+    if(tree2!=NULL && i<n) // both non-empty, so compare 
+    {
+        return(
+            tree2->data == tree1[i] && // compare node values and recursively check for left and right subtrees
+            checkIfSame(tree1, (2 * i + 1), n, tree2->left) && 
+            checkIfSame(tree1, (2 * i + 2), n, tree2->right)
+        );
+    }
+    
+    // If it reaches here, it means one of the trees is empty while other is non-empty
+    return false;
+}
+
 struct Node *createNode(int);
 struct Node *insertLeft(struct Node *, int);
 struct Node *insertRight(struct Node *, int);
