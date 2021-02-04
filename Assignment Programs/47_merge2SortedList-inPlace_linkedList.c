@@ -1,4 +1,4 @@
-// program to insert elements into sorted linked list
+// program to Merge 2 sorted lists in O(1) space. (without using extra linked list)
 
 #include <stdio.h>
 #include <stdlib.h>
