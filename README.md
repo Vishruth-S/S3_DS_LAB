@@ -51,7 +51,7 @@ To run locally, fork this repository and clone it.
 
 ### Medium
 * [Insert into sorted linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/17_insertIntoSorted_linkedList.c)
-* Sort a linked list - [MergeSort](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/63_Sort_linkedList_MergeSort.c), [BubbleSort](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/63_Sort_linkedList_BubbleSort.c), [SelectionSort](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/63_Sort_linkedList_SelectionSort.c)
+* Sort a linked list - [MergeSort](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/63_Sort_linkedList_MergeSort.c), [BubbleSort](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/63_Sort_linkedList_BubbleSort.c), [SelectionSort](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/63_Sort_linkedList_SelectionSort.c), [InsertionSort](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/63_Sort_linkedList_InsertionSort.c)
 * [Remove duplicates from linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/09_RemoveDuplicates_linkedList.c)
 * [Remove all occurences of a given element](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/06-51_RemoveOccurences_linkedList.c)
 * [Copy common elements into third linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/32_CopyCommonElements_linkedList.c)
