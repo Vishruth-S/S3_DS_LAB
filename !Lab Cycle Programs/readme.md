@@ -14,12 +14,12 @@
 ### CYCLE 2
 | Program no.      | Name | Solution Link    |
 | ----------- | ----------- |  -----------  |
-| 9      | Sparse Matrix Transpose    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q09_SparseTranspose.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/Add-index/CYCLE_2/Alternate_solutions/Elizabeth_Q9.c)   |
-| 10   | Sparse Matrix Addition        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q10_SparseSum.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/Add-index/CYCLE_2/Alternate_solutions/Q10_sparseMatrix_additionALT.c)     |
-| 11   | Sparse Matrix Multiplication        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q11_SparseProduct.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/Add-index/CYCLE_2/Alternate_solutions/VishruthS_Q11_SparseProduct_ALT.c)      |
+| 9      | Sparse Matrix Transpose    | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q09_SparseTranspose.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/Alternate_solutions/Elizabeth_Q9.c)   |
+| 10   | Sparse Matrix Addition        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q10_SparseSum.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/Alternate_solutions/Q10_sparseMatrix_additionALT.c)     |
+| 11   | Sparse Matrix Multiplication        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q11_SparseProduct.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/Alternate_solutions/VishruthS_Q11_SparseProduct_ALT.c)      |
 | 12   | Stack using array        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q12_arrayStack.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/Alternate_solutions/Stack_Using_Array.c), [Alternate2](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/Alternate_solutions/Stackimplementation.c)     |
 | 13   | Queue using array        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q13_arrayQueue.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/Alternate_solutions/Queueimplementation.c)     |
-| 14   | Multiple stack using array        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q14_arrayTwoStack.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/CYCLE_2/Alternate_solutions/Multiplestack.c)    |
+| 14   | Multiple stack using array        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q14_arrayTwoStack.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/Alternate_solutions/Multiplestack.c)    |
 | 15   | Infix to postfix      | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q15_Infix2postix.c)     |
 | 16   | Evaluation of postfix        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q16_postfixEval.c)      |
 | 17   | Evaluation of prefix        | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q17_prefixEval.c)      |
@@ -62,4 +62,4 @@
 | Program no.      | Name | Solution Link    |
 | ----------- | ----------- |  -----------  |
 | 36      | Depth First Search Traversal   | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_7/VishruthS_Q36_DFS_traversal.c), [Alternate](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_7/Alternate%20Solutions/VishruthS_Q36_DFS-traversal_Recursive.c) |
-| 37      | Breadth First Search Traversal   | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_7/VishruthS_Q37_BFS-traversal.c) |
+| 37      | Breadth First Search Traversal   | [Code](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_7/VishruthS_Q37_BFS_traversal.c) |
