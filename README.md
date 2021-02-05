@@ -61,7 +61,9 @@ To run locally, fork this repository and clone it.
 * [Find distance between two given nodes in a circular linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/45_findDistance_circularLinkedList.c)
 * [Find union of 2 linked lists](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/60_union_linkedList.c)
 
+
 ### Hard
+* [Reverse only second half of linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/reverseHalf_linkedList.c)
 * [Merge two sorted linked lists in-place](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/47_merge2SortedList-inPlace_linkedList.c)
 * Rotate a linked list by k places
 
@@ -122,7 +124,7 @@ To run locally, fork this repository and clone it.
 * Linked and Sequential representation of binary trees
 * Preorder Traversal ([Recursive](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_6/VishruthS_Q34_BST-Traversal.c) and [Iterative](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/02-23_PreorderTraversalIterative_binaryTree.c))
 * Inorder Traversal ([Recursive](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_6/VishruthS_Q34_BST-Traversal.c) and [Iterative](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/31_inorder-Iterative_binaryTree.c))
-* Postorder traversal ([Recursive](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_6/VishruthS_Q34_BST-Traversal.c) and Iterative)
+* Postorder traversal ([Recursive](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_6/VishruthS_Q34_BST-Traversal.c) and [Iterative](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/39-53_postOrder-Iterative_binaryTree.c))
 * [Level order Traversal](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/binaryTree_LevelOrderTraversal.c)
 * [Find height, number of nodes and number of vertices](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/08-52_findHeight_binaryTree.c)
 * [Implement Binary Search Tree (BST) and perform insertion, searching and deletion](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_6/VishruthS_Q35_BST-Operations.c)
