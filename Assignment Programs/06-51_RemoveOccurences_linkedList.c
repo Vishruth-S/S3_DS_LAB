@@ -9,7 +9,8 @@ struct Node
     struct Node *next;
 };
 
-// Time complexity: O(n)
+// Iterative Solution
+// Time complexity: O(n), Space complexity: O(1)
 struct Node *removeOccurences(struct Node *head, int data)
 {
     struct Node *curr = head, *prev = NULL, *temp = NULL;
@@ -39,6 +40,16 @@ struct Node *removeOccurences(struct Node *head, int data)
     }
 
     return head;
+}
+
+// Recursive Solution
+// Time complexity: O(n), Space complexity: O(n)
+struct Node *removeOccurences2(struct Node *head, int data)
+{
+    if (head == NULL)
+        return head;
+    head->next = removeOccurences2(head->next, data);
+    return head->data == data ? head->next : head;
 }
 
 struct Node *insertAtHead(struct Node *, int);
