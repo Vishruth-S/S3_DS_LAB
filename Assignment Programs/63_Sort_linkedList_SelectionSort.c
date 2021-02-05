@@ -1,3 +1,5 @@
+// Sort a linked list using selection sort
+
 #include <stdio.h>
 #include <stdlib.h>
 
