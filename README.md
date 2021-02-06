@@ -48,6 +48,9 @@ To run locally, fork this repository and clone it.
 * [Concatenate two linked lists](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/25_Concatenate_linkedList.c)
 * [Swap first half with second half](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/46_SwapFirstAndSecondHalf_linkedList.c)
 * Find [predecessor](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/61_linkedList_predeccesor.c) and [successor](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/30_FindSuccessor_linkedList.c) nodes
+* [Check if linked list is circular](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/checkIfCircular_linkedList.c)
+* [Delete alternate Nodes](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/deleteAlternateNodes_LinkedList.c)
+* [Check if length is odd or even](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/oddOrEvenLength_linkedList.c)
 
 ### Medium
 * [Insert into sorted linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/17_insertIntoSorted_linkedList.c)
@@ -60,7 +63,6 @@ To run locally, fork this repository and clone it.
 * Check if a list of words form a palindrome
 * [Find distance between two given nodes in a circular linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/45_findDistance_circularLinkedList.c)
 * [Find union of 2 linked lists](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/60_union_linkedList.c)
-
 
 ### Hard
 * [Reverse only second half of linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/reverseHalf_linkedList.c)
@@ -145,6 +147,8 @@ To run locally, fork this repository and clone it.
 * Find kth smallest element in a BST
 * [Find and remove maximum element in a BST](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/26_RemoveMax_binarySearchTree.c)
 * [Find and remove minimum element in a BST](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/38_removeMinimum_binarySearchTree.c)
+* [Check if there is a path sum](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/hasPathSum_binaryTree.c)
+* [Check if tree is Symmetric](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/symetric_binaryTree.c)
 
 ### Hard
 * [Delete all nodes in a given range](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/deleteInRange_binarySearchTree.c)
