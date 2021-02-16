@@ -83,7 +83,7 @@ To run locally, fork this repository and clone it.
 * [Implement Deque](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q19_Deque.c)
 * Max Heap and Min heap
 * Insert and delete from heap
-* Heapify an array
+* [Heapify an array](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/heapify.c)
 
 ### Easy
 * [Reverse a number using stack](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/03_ReverseNumber.c)
@@ -143,12 +143,14 @@ To run locally, fork this repository and clone it.
 ### Medium
 * [Print nodes at a given level](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/printNthLevel_binaryTree.c)
 * [Find all ancestors of a given node](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/24-55_printAncestors_binaryTree.c)
+* [Find the sibling of a given node](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/findSibling_binarySearchTree.c)
 * [Check if a binary tree is a binary search tree](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/15_checkIf_BinarySearchTree.c)
 * [Print nodes at each level and find their sum](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/printNodesByLevel_binaryTree.c)
 * [Find and remove maximum element in a BST](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/26_RemoveMax_binarySearchTree.c)
 * [Find and remove minimum element in a BST](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/38_removeMinimum_binarySearchTree.c)
 * [Check if there is a path sum](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/hasPathSum_binaryTree.c)
 * [Check if tree is Symmetric](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/symetric_binaryTree.c)
+* [Find second largest element in a BST without using inorder array](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/secondLargest_BST.c)
 * Find sum of all left leaves and right leaves
 * Find kth smallest element in a BST
 
