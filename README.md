@@ -60,7 +60,7 @@ To run locally, fork this repository and clone it.
 * [Copy common elements into third linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/32_CopyCommonElements_linkedList.c)
 * [Split into 3 linked list based on value](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/22_splitIntoThree_linkedList.c)
 * [Split into odd and even linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/36_splitOddEven_linkedList.c)
-* Check if a list of words form a palindrome
+* [Check if a linked list forms a palindrome](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/checkPalindromeLinkedlist.c)
 * [Find distance between two given nodes in a circular linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/45_findDistance_circularLinkedList.c)
 * [Find union of 2 linked lists](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/60_union_linkedList.c)
 
@@ -137,6 +137,7 @@ To run locally, fork this repository and clone it.
 * [Check if linked and sequential represented binary trees are same](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/07-19_checkIfSame_binaryTree.c)
 * [Find minimum and maximum in a BST](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/13_FindMinMax_binarySearchTree.c)
 * [Count and delete leaf nodes](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/34_DeleteLeafNodes_binarySearchTree.c)
+* [Find sum of leaf nodes](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/sumOfLeaves_binaryTree.c)
 * [Count degree of nodes](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/14_countDegreeOfNodes_binaryTree.c)
 * [print all elements in a given range in a BST](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/01_printElementsInRange_binarySearchTree.c)
 
