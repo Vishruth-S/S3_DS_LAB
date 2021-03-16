@@ -66,7 +66,7 @@ struct Node *insertNode_Iterative(struct Node *root, int data)
 
 // =================== TO SEARCH FOR NODE ===================== //
 // Method 1: Recursive
-// Time complexity: O(logn)
+// Time complexity:Average case(Balanced trees): O(logn), Worst case(Skewed trees): O(n)
 bool Search(struct Node *root, int data)
 {
     if (root == NULL) // if it reaches null, it means element doesn't exists
@@ -81,7 +81,7 @@ bool Search(struct Node *root, int data)
 }
 
 // Method 2: Iterative
-// Time complexity: O(logn)
+// Time complexity:Average case(Balanced trees): O(logn), Worst case(Skewed trees): O(n)
 bool Search_Iterative(struct Node *root, int data)
 {
     struct Node *curr = root;
@@ -98,7 +98,9 @@ bool Search_Iterative(struct Node *root, int data)
 }
 
 // ===== To delete a node ======== //
-// Time complexity: O(logn)
+
+// Method 1: Recursive
+// Time complexity:Average case(Balanced trees): O(logn), Worst case(Skewed trees): O(n)
 struct Node *Delete(struct Node *root, int data)
 {
     if (root == NULL) // if empty node, then return it;
@@ -140,12 +142,87 @@ struct Node *Delete(struct Node *root, int data)
     return root;
 }
 
+// Method 2: Itertaive
+// Time complexity:Average case(Balanced trees): O(logn), Worst case(Skewed trees): O(n)
+struct Node *Delete_2(struct Node *root, int data)
+{
+    struct Node *curr = root, *parent = NULL;
+    // Finding the node to be deleted
+    while (curr && curr->data != data)
+    {
+        parent = curr;
+        if (data < curr->data)
+            curr = curr->left;
+        else
+            curr = curr->right;
+    }
+    if (!curr)
+    {
+        printf("\nNode to be deleted does not exist in Tree\n");
+        return root;
+    }
+
+    // CASE 1 : LEAF NODE, NO CHILDREN
+    if (!curr->left && !curr->right)
+    {
+        // if node is root node
+        if (parent == NULL)
+            return NULL;
+
+        if (parent->left == curr) // if node to be deleted is left child of parent
+            parent->left = NULL;  // then set parent->left to NULL
+        else                      // else if node to be deleted is right child of parent
+            parent->right = NULL; // then set parent->right to NULL
+
+        // Delete the current node
+        curr->right = curr->left = NULL;
+        free(curr);
+    }
+
+    // CASE 2: ONLY 1 CHILD
+    else if (!curr->left || !curr->right)
+    {
+        struct Node *child = curr->left ? curr->left : curr->right;
+
+        // if node is root node
+        if (parent == NULL)
+            return child;
+
+        if (parent->left == curr)  // if node to be deleted is left child of parent
+            parent->left = child;  // then set parent->left to child
+        else                       // if node to be deleted is right child of parent
+            parent->right = child; // then set parent->right to child
+    }
+
+    // CASE 3: TWO CHILDREN
+    else
+    {
+        // Find the inorder succesor (smallest node on right sub-tree)
+        struct Node *succesor = curr->right;
+        struct Node *succesor_parent = NULL;
+        while (succesor->left)
+        {
+            succesor_parent = succesor;
+            succesor = succesor->left;
+        }
+
+        if (succesor_parent == NULL)       // This is true if inorder_succesor is right child of node to be deleted
+            curr->right = succesor->right; // Then set right child as succesor's right child
+        else
+            succesor_parent->left = succesor->right; // Else set parent's left child as successor's child
+
+        curr->data = succesor->data; // Swap data of node to be deleted with that of the inorder succesor
+        free(succesor);              // and delete inorder succesor
+    }
+    
+    return root;
+}
+
 // ======= MAIN function ======== //
 int main()
 {
     struct Node *root = NULL;
     int ch, data, queryData;
-    printf("\nBinary Search Tree");
     do
     {
         printf("\n\n1.Insert\n2.Search\n3.Delete\n4.Display (Inorder)\n");
@@ -161,7 +238,7 @@ int main()
         case 2:
             printf("\nEnter value to be searched\n");
             scanf("%d", &queryData);
-            if (Search(root, queryData))
+            if (Search_Iterative(root, queryData))
                 printf("\nElement found ");
             else
                 printf("\nElement not found ");
@@ -170,6 +247,7 @@ int main()
             printf("\nEnter value to be deleted\n");
             scanf("%d", &queryData);
             root = Delete(root, queryData);
+            // root = Delete_2(root, queryData);
             printf("\nElement deleted successfully (if it exists)");
             break;
         case 4:
@@ -177,8 +255,6 @@ int main()
             inorder(root);
         }
     } while (ch < 5);
-
-    return 0;
 }
 
 // ====== Additional helper functions ======= //
