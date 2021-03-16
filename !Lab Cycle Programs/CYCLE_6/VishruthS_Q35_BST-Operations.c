@@ -22,7 +22,7 @@ void inorder(struct Node *);
 
 // ================ TO INSERT A NEW NODE ================= //
 // Method 1: Recursive
-// Time complexity: O(logn)
+// Time complexity- Average case(Balanced trees): O(logn), Worst case(Skewed trees): O(n)
 struct Node *insertNode(struct Node *root, int data)
 {
     if (root == NULL)                                // if root is null,
@@ -36,7 +36,7 @@ struct Node *insertNode(struct Node *root, int data)
 }
 
 // Method 2: Iterative
-// Time complexity: O(logn)
+// Time complexity- Average case(Balanced trees): O(logn), Worst case(Skewed trees): O(n)
 struct Node *insertNode_Iterative(struct Node *root, int data)
 {
     struct Node *newNode = createNode(data); // new node is created
@@ -66,7 +66,7 @@ struct Node *insertNode_Iterative(struct Node *root, int data)
 
 // =================== TO SEARCH FOR NODE ===================== //
 // Method 1: Recursive
-// Time complexity:Average case(Balanced trees): O(logn), Worst case(Skewed trees): O(n)
+// Time complexity- Average case(Balanced trees): O(logn), Worst case(Skewed trees): O(n)
 bool Search(struct Node *root, int data)
 {
     if (root == NULL) // if it reaches null, it means element doesn't exists
@@ -81,7 +81,7 @@ bool Search(struct Node *root, int data)
 }
 
 // Method 2: Iterative
-// Time complexity:Average case(Balanced trees): O(logn), Worst case(Skewed trees): O(n)
+// Time complexity- Average case(Balanced trees): O(logn), Worst case(Skewed trees): O(n)
 bool Search_Iterative(struct Node *root, int data)
 {
     struct Node *curr = root;
@@ -97,10 +97,10 @@ bool Search_Iterative(struct Node *root, int data)
     return false; // if it reaches here, it means curr = NULL, or data doesn't exist in tree
 }
 
-// ===== To delete a node ======== //
 
+// =================== TO DELETE A NODE ===================== //
 // Method 1: Recursive
-// Time complexity:Average case(Balanced trees): O(logn), Worst case(Skewed trees): O(n)
+// Time complexity- Average case(Balanced trees): O(logn), Worst case(Skewed trees): O(n)
 struct Node *Delete(struct Node *root, int data)
 {
     if (root == NULL) // if empty node, then return it;
@@ -143,7 +143,7 @@ struct Node *Delete(struct Node *root, int data)
 }
 
 // Method 2: Itertaive
-// Time complexity:Average case(Balanced trees): O(logn), Worst case(Skewed trees): O(n)
+// Time complexity- Average case(Balanced trees): O(logn), Worst case(Skewed trees): O(n)
 struct Node *Delete_2(struct Node *root, int data)
 {
     struct Node *curr = root, *parent = NULL;
@@ -194,7 +194,7 @@ struct Node *Delete_2(struct Node *root, int data)
             parent->right = child; // then set parent->right to child
     }
 
-    // CASE 3: TWO CHILDREN
+    // CASE 3: BOTH CHILDREN
     else
     {
         // Find the inorder succesor (smallest node on right sub-tree)
