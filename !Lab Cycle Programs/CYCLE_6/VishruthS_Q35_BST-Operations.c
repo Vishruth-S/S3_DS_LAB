@@ -175,7 +175,6 @@ struct Node *Delete_2(struct Node *root, int data)
             parent->right = NULL; // then set parent->right to NULL
 
         // Delete the current node
-        curr->right = curr->left = NULL;
         free(curr);
     }
 
