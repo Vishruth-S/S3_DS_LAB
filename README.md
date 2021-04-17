@@ -97,7 +97,7 @@ To run locally, fork this repository and clone it.
 ### Medium
 * Implement queue using two stacks
 * Implement stack using two queues
-* Implement priority queue - [using Linked List](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/queue_linkedList.c)
+* Implement priority queue - [Using Array 1](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/priorityQ_array.c), [Using Array 2](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/priorityQ_array2.c) , [Using LinkedList 1](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/priorityQ_linkedList.c), [Using LinkedList 2](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/priorityQ_linkedList2.c), Using Heap 
 
 
 ## 4) Hashing Algorithms
