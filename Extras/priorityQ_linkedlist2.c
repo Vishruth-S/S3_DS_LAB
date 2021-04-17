@@ -1,4 +1,4 @@
-// Priority Queue using a linked list where priority of an element is its value
+// Program to implement Priority Queue using Linked list.
 // Approach 2 - In this approach,  dequeue and peek are modified while Enqueue is same as that of normal queue.
 
 #include <stdio.h>
