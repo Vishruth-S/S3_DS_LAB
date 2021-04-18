@@ -49,15 +49,13 @@ void dequeue()
     }
     else
     {
+        deleted = q[front];
+        
         if (front == rear) // Check if element to be removed is last element in queue
-        {
-            deleted = q[front];
             front = rear = -1; // Then queue must be reset.
-        }
         else
-        {
-            deleted = q[front++]; // else only front needs to be incremented
-        }
+            front++; // else only front needs to be incremented
+        
         printf("\nDeleted from queue: %d", deleted);
     }
 }
