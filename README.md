@@ -78,7 +78,7 @@ To run locally, fork this repository and clone it.
 * [Implement stack using array](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q12_arrayStack.c)
 * [Implement stack using linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/stack_linkedList.c)
 * [Implement queue using array](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q13_arrayQueue.c)
-* [Implement queue using linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/priorityQueue_linkedList.c)
+* [Implement queue using linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/queue_linkedList.c)
 * [Implement circular queue](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q18_CircularQ.c)
 * [Implement Deque](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q19_Deque.c)
 * Max Heap and Min heap
