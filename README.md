@@ -81,9 +81,10 @@ To run locally, fork this repository and clone it.
 * [Implement queue using linked list](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/queue_linkedList.c)
 * [Implement circular queue](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q18_CircularQ.c)
 * [Implement Deque](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_2/VishruthS_Q19_Deque.c)
-* Max Heap and Min heap
-* Insert and delete from heap
-* [Heapify an array](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/heapify.c)
+* [Build max Heap from array (naive method)](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/buildMaxHeap.c)
+* [Build min Heap from array (naive method)](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/buildMinHeap.c)
+* [Build max Heap from array using Heapify](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/maxHeapify.c)
+* [Build min Heap from array using Heapify](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Extras/minHeapify.c)
 
 ### Easy
 * [Reverse a number using stack](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/Assignment%20Programs/03_ReverseNumber.c)
