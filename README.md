@@ -177,10 +177,4 @@ To run locally, fork this repository and clone it.
 * Depth First Search and Traversal - [Recursive](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_7/Alternate%20Solutions/VishruthS_Q36_DFS-traversal_Recursive.c) and [Iterative](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_7/VishruthS_Q36_DFS_traversal.c)
 * [Breadth First Search and Traversal](https://github.com/Vishruth-S/S3_DS_LAB/blob/master/!Lab%20Cycle%20Programs/CYCLE_7/VishruthS_Q37_BFS_traversal.c)
 
-### Miscellaneous
-* Detect cycle in a graph
-* Minimum spanning trees
-* Topological Sorting
-* Dijkstra's Algorithm
-* Bellman-Ford Algorithm
-* Floyd-Warshall Algorithm
+
