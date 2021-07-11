@@ -119,17 +119,14 @@ struct Node *Delete(struct Node *root, int data)
             root = NULL; // and set current value to null
         }
         // Case 2: Only one child
-        else if (root->left == NULL) // only Left child
+        else if (root->left == NULL || root->right==NULL) // only one child
         {
             struct Node *temp = root; // current node
-            root = root->right;       // change link to that of next node
-            free(temp);               // and delete the current node
-        }
-        else if (root->right == NULL) // or only Right child
-        {
-            struct Node *temp = root; // current node
-            root = root->left;        // change link to that of next node
-            free(temp);               // and delete the current node
+            if (root->left) // if left child
+                root = root->left; // change link to that of left child
+            else // else if right child
+                root = root->right; // change link to that of right child
+            free(temp);// and delete the current node
         }
         // Case 3: Both children
         else
